@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.075)
 
 style namebox:
     xpos gui.name_xpos
@@ -234,33 +234,75 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
+# screen save_menu():
+#
+#     zorder 90
+#
+#     if quick_menu:
+#
+#         hbox:
+#             style_prefix "quick"
+#
+#             xalign 1.0
+#             yalign 0.0
+#             imagemap:
+#                 ground "gui/save_btn3.png"
+            # imagemap:
+            #     ground "gui/save_bar_7.png"
+
+
+
+## This code ensures that the quick_menu screen is displayed in-game, whenever
+## the player has not explicitly hidden the interface.
+# init python:
+#     config.overlay_screens.append("save_menu")
+
 
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
 
+
+
+
+
 screen quick_menu():
+
+
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        imagebutton:
+            idle "save_btn_idle.png"
+            hover "save_btn_hover.png"
+            xalign 1.0
+            yalign 0.0
+            action ShowMenu('save')
 
-            xalign 0.5
-            yalign 1.0
+        imagebutton:
+            idle "option_btn_idle.png"
+            hover "option_btn_hover.png"
+            xalign 1.0
+            yalign 0.1
+            action ShowMenu('preferences')
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+        #vbox xalign 1.0 yalign 0.0:
+        #    imagebutton:
+        #     auto "save_btn_%s.png" action ShowMenu('save')
+            #imagebutton auto "prefs_%s.png" action ShowMenu('preferences')
+
+        # hbox:
+        #     style_prefix "quick"
+        #
+        #     xalign 0.5
+        #     yalign 0.999
+        #
+        #     textbutton _("Save") action ShowMenu('save')
+        #     textbutton _("Options") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -270,8 +312,16 @@ init python:
 
 default quick_menu = True
 
-style quick_button is default
-style quick_button_text is button_text
+style quick_button is button:
+    background "#fff"
+
+style quick_button_text is button_text:
+    size 50
+    hover_color "#fff"             # Pink
+    outlines [ (1, "#043D0A", 1, 1) ] # Blue
+    color "#fff"                   # Red
+
+
 
 style quick_button:
     properties gui.button_properties("quick_button")
@@ -279,6 +329,8 @@ style quick_button:
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
+style quick_text is button:
+    background "#000"
 
 ################################################################################
 ## Main and Game Menu Screens

@@ -1,26 +1,43 @@
-Sun Dec 13 21:15:56 2020
+Mon Dec 14 13:10:48 2020
 Darwin-20.1.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.22s
-Early init took 0.13s
-Loader init took 0.04s
-Loading error handling took 0.54s
-Loading script took 1.05s
-Loading save slot metadata. took 0.07s
+Bootstrap to the start of init.init took 0.26s
+Early init took 0.11s
+Loader init took 0.03s
+Loading error handling took 1.07s
+Loading script took 1.79s
+Loading save slot metadata. took 0.08s
 Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.90s
+Loading analysis data took 0.13s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
 
-File "game/script.rpy", line 62: expected 'label_name_declare' not found.
-    label jump santa_interaction_1_cheery:
-         ^
-DPI scale factor: 1.000000
-Interface start took 1.37s
+Full traceback:
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/main.py", line 53DPI scale factor: 1.000000
+Creating interface object took 3.14s
+Cleaning stores took 0.00s
+Init translation took 1.41s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.10s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.85s
+Save bytecode. took 0.17s
+Running _start took 0.01s
+Performance test:
+Interface start took 0.42s
 
 primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
 Vendor: 'Intel Inc.'
 Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
 Version: '2.1 INTEL-16.0.49'
@@ -171,222 +188,51 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 7.17582178116s
+Total time until interface ready: 20.4588868618s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.018675 seconds.
+- Frame drawn at 0.029928 seconds.
+- Frame drawn at 0.049666 seconds.
+- Frame drawn at 0.060678 seconds.
+- 0.060678 seconds to render 5 frames.
 Resetting cache.
-Bootstrap to the start of init.init took 41.05s
+Bootstrap to the start of init.init took 69.70s
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.12s
-Loading script took 1.27s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 8: invalid syntax
-    Character(_"Jack Frost", color="#27BDC9")
-                           ^
-
-File "game/script.rpy", line 9: invalid syntax
-    Character(_"Abonimable Snowman", color="#7ECFD6")
-                                   ^
-
-File "game/script.rpy", line 10: invalid syntax
-    Character(_"Bernard", color="#39AA45")
-                        ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
-Version: '2.1 INTEL-16.0.49'
-Display Info: None
-Extensions:
-    
-    GL_APPLE_aux_depth_stencil
-    GL_APPLE_client_storage
-    GL_APPLE_element_array
-    GL_APPLE_fence
-    GL_APPLE_float_pixels
-    GL_APPLE_flush_buffer_range
-    GL_APPLE_flush_render
-    GL_APPLE_object_purgeable
-    GL_APPLE_packed_pixels
-    GL_APPLE_pixel_buffer
-    GL_APPLE_rgb_422
-    GL_APPLE_row_bytes
-    GL_APPLE_specular_vector
-    GL_APPLE_texture_range
-    GL_APPLE_transform_hint
-    GL_APPLE_vertex_array_object
-    GL_APPLE_vertex_array_range
-    GL_APPLE_vertex_point_size
-    GL_APPLE_vertex_program_evaluators
-    GL_APPLE_ycbcr_422
-    GL_ARB_color_buffer_float
-    GL_ARB_depth_buffer_float
-    GL_ARB_depth_clamp
-    GL_ARB_depth_texture
-    GL_ARB_draw_buffers
-    GL_ARB_draw_elements_base_vertex
-    GL_ARB_draw_instanced
-    GL_ARB_fragment_program
-    GL_ARB_fragment_program_shadow
-    GL_ARB_fragment_shader
-    GL_ARB_framebuffer_object
-    GL_ARB_framebuffer_sRGB
-    GL_ARB_half_float_pixel
-    GL_ARB_half_float_vertex
-    GL_ARB_instanced_arrays
-    GL_ARB_multisample
-    GL_ARB_multitexture
-    GL_ARB_occlusion_query
-    GL_ARB_pixel_buffer_object
-    GL_ARB_point_parameters
-    GL_ARB_point_sprite
-    GL_ARB_provoking_vertex
-    GL_ARB_seamless_cube_map
-    GL_ARB_shader_objects
-    GL_ARB_shader_texture_lod
-    GL_ARB_shading_language_100
-    GL_ARB_shadow
-    GL_ARB_sync
-    GL_ARB_texture_border_clamp
-    GL_ARB_texture_compression
-    GL_ARB_texture_compression_rgtc
-    GL_ARB_texture_cube_map
-    GL_ARB_texture_env_add
-    GL_ARB_texture_env_combine
-    GL_ARB_texture_env_crossbar
-    GL_ARB_texture_env_dot3
-    GL_ARB_texture_float
-    GL_ARB_texture_mirrored_repeat
-    GL_ARB_texture_non_power_of_two
-    GL_ARB_texture_rectangle
-    GL_ARB_texture_rg
-    GL_ARB_transpose_matrix
-    GL_ARB_vertex_array_bgra
-    GL_ARB_vertex_blend
-    GL_ARB_vertex_buffer_object
-    GL_ARB_vertex_program
-    GL_ARB_vertex_shader
-    GL_ARB_window_pos
-    GL_ATI_separate_stencil
-    GL_ATI_texture_env_combine3
-    GL_ATI_texture_float
-    GL_ATI_texture_mirror_once
-    GL_EXT_abgr
-    GL_EXT_bgra
-    GL_EXT_blend_color
-    GL_EXT_blend_equation_separate
-    GL_EXT_blend_func_separate
-    GL_EXT_blend_minmax
-    GL_EXT_blend_subtract
-    GL_EXT_clip_volume_hint
-    GL_EXT_debug_label
-    GL_EXT_debug_marker
-    GL_EXT_draw_buffers2
-    GL_EXT_draw_range_elements
-    GL_EXT_fog_coord
-    GL_EXT_framebuffer_blit
-    GL_EXT_framebuffer_multisample
-    GL_EXT_framebuffer_multisample_blit_scaled
-    GL_EXT_framebuffer_object
-    GL_EXT_framebuffer_sRGB
-    GL_EXT_geometry_shader4
-    GL_EXT_gpu_program_parameters
-    GL_EXT_gpu_shader4
-    GL_EXT_multi_draw_arrays
-    GL_EXT_packed_depth_stencil
-    GL_EXT_packed_float
-    GL_EXT_provoking_vertex
-    GL_EXT_rescale_normal
-    GL_EXT_secondary_color
-    GL_EXT_separate_specular_color
-    GL_EXT_shadow_funcs
-    GL_EXT_stencil_two_side
-    GL_EXT_stencil_wrap
-    GL_EXT_texture_array
-    GL_EXT_texture_compression_dxt1
-    GL_EXT_texture_compression_s3tc
-    GL_EXT_texture_env_add
-    GL_EXT_texture_filter_anisotropic
-    GL_EXT_texture_integer
-    GL_EXT_texture_lod_bias
-    GL_EXT_texture_rectangle
-    GL_EXT_texture_sRGB
-    GL_EXT_texture_sRGB_decode
-    GL_EXT_texture_shared_exponent
-    GL_EXT_timer_query
-    GL_EXT_transform_feedback
-    GL_EXT_vertex_array_bgra
-    GL_IBM_rasterpos_clip
-    GL_NV_blend_square
-    GL_NV_conditional_render
-    GL_NV_depth_clamp
-    GL_NV_fog_distance
-    GL_NV_light_max_exponent
-    GL_NV_texgen_reflection
-    GL_NV_texture_barrier
-    GL_SGIS_generate_mipmap
-    GL_SGIS_texture_edge_clamp
-    GL_SGIS_texture_lod
-Number of texture units: 8
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 44.7500629425s
-Resetting cache.
-Bootstrap to the start of init.init took 61.13s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.08s
-Loading script took 0.68s
+Loading error handling took 0.10s
+Loading script took 0.83s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.82s
-Loading analysis data took 0.02s
+Running init code took 0.06s
+Loading analysis data took 0.07s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.06s
 DPI scale factor: 1.000000
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.18s
-Build styles took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Analyze screens took 0.01s
 Save screen analysis took 0.07s
 Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.02s
+Interface start took 0.04s
 
 primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
 Vendor: 'Intel Inc.'
 Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
 Version: '2.1 INTEL-16.0.49'
@@ -537,18 +383,5162 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 65.8200597763s
+Total time until interface ready: 74.7534267902s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.020695 seconds.
-- Frame drawn at 0.023680 seconds.
-- Frame drawn at 0.025927 seconds.
-- Frame drawn at 0.029510 seconds.
-- 0.029510 seconds to render 5 frames.
+- Frame drawn at 0.017197 seconds.
+- Frame drawn at 0.037600 seconds.
+- Frame drawn at 0.052056 seconds.
+- Frame drawn at 0.067399 seconds.
+- 0.067399 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 80.60s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.09s
+Loading script took 0.85s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.00s
+Init translation took 0.03s
 Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 85.5962908268s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017156 seconds.
+- Frame drawn at 0.031679 seconds.
+- Frame drawn at 0.046767 seconds.
+- Frame drawn at 0.051891 seconds.
+- 0.051891 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 86.94s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.02s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 91.1248397827s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.011521 seconds.
+- Frame drawn at 0.022403 seconds.
+- Frame drawn at 0.048771 seconds.
+- Frame drawn at 0.059505 seconds.
+- 0.059505 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 91.81s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.05s
+Loading script took 0.31s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 96.267157793s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015355 seconds.
+- Frame drawn at 0.030899 seconds.
+- Frame drawn at 0.047553 seconds.
+- Frame drawn at 0.065446 seconds.
+- 0.065446 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 146.50s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.10s
+Loading script took 1.04s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.11s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.12s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.31s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 152.320629835s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016085 seconds.
+- Frame drawn at 0.023760 seconds.
+- Frame drawn at 0.042111 seconds.
+- Frame drawn at 0.059108 seconds.
+- 0.059108 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 439.13s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.11s
+Loading script took 1.18s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.34s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 444.974509001s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017213 seconds.
+- Frame drawn at 0.025767 seconds.
+- Frame drawn at 0.034123 seconds.
+- Frame drawn at 0.036614 seconds.
+- 0.036614 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 455.44s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.09s
+Loading script took 0.65s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.34s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 460.573226929s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017759 seconds.
+- Frame drawn at 0.027351 seconds.
+- Frame drawn at 0.044487 seconds.
+- Frame drawn at 0.063309 seconds.
+- 0.063309 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 466.26s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.04s
+Loading script took 0.40s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.29s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 471.021953821s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016577 seconds.
+- Frame drawn at 0.032116 seconds.
+- Frame drawn at 0.050039 seconds.
+- Frame drawn at 0.066411 seconds.
+- 0.066411 seconds to render 5 frames.
+
+Full traceback:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen/renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 675, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 883, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/im.py", line 583, in render
+    return cache.get(self, render=True)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/im.py", line 628, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/save_btn1.png'.
+
+While loading <'Image' u'gui/save_btn1.png'>:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+IOError: Couldn't find file 'gui/save_btn1.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 475.63s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.04s
+Loading script took 0.28s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 479.992775917s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016147 seconds.
+- Frame drawn at 0.030760 seconds.
+- Frame drawn at 0.047903 seconds.
+- Frame drawn at 0.066253 seconds.
+- 0.066253 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 480.54s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 485.083511829s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017737 seconds.
+- Frame drawn at 0.028260 seconds.
+- Frame drawn at 0.044978 seconds.
+- Frame drawn at 0.063860 seconds.
+- 0.063860 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 693.49s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.11s
+Loading script took 1.01s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.36s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 699.116343975s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015993 seconds.
+- Frame drawn at 0.024516 seconds.
+- Frame drawn at 0.041014 seconds.
+- Frame drawn at 0.057681 seconds.
+- 0.057681 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 713.29s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.12s
+Loading script took 1.01s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.08s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.28s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 718.810386896s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016239 seconds.
+- Frame drawn at 0.032410 seconds.
+- Frame drawn at 0.049830 seconds.
+- Frame drawn at 0.065845 seconds.
+- 0.065845 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 721.26s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 725.568654776s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.011955 seconds.
+- Frame drawn at 0.021714 seconds.
+- Frame drawn at 0.038779 seconds.
+- Frame drawn at 0.045821 seconds.
+- 0.045821 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 839.02s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.15s
+Loading script took 1.15s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.30s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 844.794292927s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.013616 seconds.
+- Frame drawn at 0.019396 seconds.
+- Frame drawn at 0.036323 seconds.
+- Frame drawn at 0.053618 seconds.
+- 0.053618 seconds to render 5 frames.
+
+Full traceback:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 430, in visit_all
+    callback(self)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 440, in per_interact
+    self.update()
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 946, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 940, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn3%s.png').
+
+While running game code:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn3%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 910.18s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.09s
+Loading script took 0.90s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.33s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 915.612274885s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015852 seconds.
+- Frame drawn at 0.029073 seconds.
+- Frame drawn at 0.046364 seconds.
+- Frame drawn at 0.063325 seconds.
+- 0.063325 seconds to render 5 frames.
+
+Full traceback:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 430, in visit_all
+    callback(self)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 440, in per_interact
+    self.update()
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 946, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 940, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn%s.png').
+
+While running game code:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 919.57s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.10s
+Loading script took 0.93s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.32s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 925.006351948s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017098 seconds.
+- Frame drawn at 0.024975 seconds.
+- Frame drawn at 0.041851 seconds.
+- Frame drawn at 0.051032 seconds.
+- 0.051032 seconds to render 5 frames.
+
+Full traceback:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 430, in visit_all
+    callback(self)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 440, in per_interact
+    self.update()
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/display/screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 946, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ui.py", line 940, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn_%s.png').
+
+While running game code:
+  File "game/script.rpy", line 44, in script
+    "I've gotten to know all sorts of people at the North Pole."
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 270, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 277, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 279, in execute
+    vbox xalign 1.0 yalign 0.0:
+  File "game/screens.rpy", line 280, in execute
+    imagebutton auto "save_btn3%s.png" action ShowMenu('save')
+Exception: Imagebutton does not have a idle image. (auto=u'save_btn_%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 1062.99s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.02s
+Loading script took 0.79s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.01s
+Load screen analysis took 0.46s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1068.43936396s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.013615 seconds.
+- Frame drawn at 0.017006 seconds.
+- Frame drawn at 0.020827 seconds.
+- Frame drawn at 0.025347 seconds.
+- 0.025347 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 1066.35s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.05s
+Loading script took 0.50s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.34s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1071.40963483s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.012671 seconds.
+- Frame drawn at 0.023749 seconds.
+- Frame drawn at 0.042447 seconds.
+- Frame drawn at 0.058487 seconds.
+- 0.058487 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 1251.87s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.10s
+Loading script took 0.92s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.07s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.34s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1257.4285028s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.012751 seconds.
+- Frame drawn at 0.022947 seconds.
+- Frame drawn at 0.041739 seconds.
+- Frame drawn at 0.058195 seconds.
+- 0.058195 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 1443.60s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.12s
+Loading script took 1.02s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.34s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1449.28275394s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015414 seconds.
+- Frame drawn at 0.026981 seconds.
+- Frame drawn at 0.043951 seconds.
+- Frame drawn at 0.060884 seconds.
+- 0.060884 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 1449.95s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.30s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.39s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1454.77711487s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017717 seconds.
+- Frame drawn at 0.032863 seconds.
+- Frame drawn at 0.051046 seconds.
+- Frame drawn at 0.068543 seconds.
+- 0.068543 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 2818.81s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.09s
+Loading script took 0.64s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.37s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2823.98932791s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015853 seconds.
+- Frame drawn at 0.026689 seconds.
+- Frame drawn at 0.039265 seconds.
+- Frame drawn at 0.056247 seconds.
+- 0.056247 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 2858.37s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.08s
+Loading script took 0.57s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
 Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2863.00664282s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.015970 seconds.
+- Frame drawn at 0.029985 seconds.
+- Frame drawn at 0.048941 seconds.
+- Frame drawn at 0.063533 seconds.
+- 0.063533 seconds to render 5 frames.
+Resetting cache.
+Bootstrap to the start of init.init took 3029.19s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.09s
+Loading script took 0.67s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.38s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 3034.39109278s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016601 seconds.
+- Frame drawn at 0.035831 seconds.
+- Frame drawn at 0.055343 seconds.
+- Frame drawn at 0.070070 seconds.
+- 0.070070 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.29s
+Load screen analysis took 0.11s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 10343.11s
+Early init took 0.05s
+Loader init took 0.06s
+Loading error handling took 0.54s
+Loading script took 0.64s
+Loading save slot metadata. took 0.08s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.18s
+DPI scale factor: 1.000000
+Creating interface object took 0.10s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 10350.1015899s
+Resetting cache.
+Bootstrap to the start of init.init took 10347.38s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.09s
+Loading script took 0.47s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1259, 708) drawable=(2518, 1416)
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 645'
+Version: '2.1 INTEL-16.0.49'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_separate_stencil
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_multisample_blit_scaled
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 10352.012399s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.019159 seconds.
+- Frame drawn at 0.032643 seconds.
+- Frame drawn at 0.052287 seconds.
+- Frame drawn at 0.068693 seconds.
+- 0.068693 seconds to render 5 frames.
+Performance test:
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.018128 seconds.
+- Frame drawn at 0.030264 seconds.
+- Frame drawn at 0.053742 seconds.
+- Frame drawn at 0.065441 seconds.
+- 0.065441 seconds to render 5 frames.
