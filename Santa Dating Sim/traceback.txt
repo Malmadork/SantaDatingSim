@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 78, in script
+    $ santa_aff += 1
+  File "game/script.rpy", line 78, in <module>
+    $ santa_aff += 1
+NameError: name 'santa_aff' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 78, in script
+    $ santa_aff += 1
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Volumes/renpy-7.3.5-sdk/renpy-7.3.5-sdk/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 78, in <module>
+    $ santa_aff += 1
+NameError: name 'santa_aff' is not defined
+
+Darwin-20.1.0-x86_64-i386-64bit
+Ren'Py 7.3.5.606
+Santa Dating Sim 1.0
+Sun Dec 13 19:48:03 2020
