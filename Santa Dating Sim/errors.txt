@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 8: invalid syntax
-    Character(_"Jack Frost", color="#27BDC9")
-                           ^
-
-File "game/script.rpy", line 9: invalid syntax
-    Character(_"Abonimable Snowman", color="#7ECFD6")
-                                   ^
-
-File "game/script.rpy", line 10: invalid syntax
-    Character(_"Bernard", color="#39AA45")
-                        ^
+File "game/screens.rpy", line 301: end of line expected.
+    init python:
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Dec 13 21:16:39 2020
+Mon Dec 14 00:24:32 2020

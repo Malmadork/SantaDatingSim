@@ -11,10 +11,13 @@ define bernard = Character(_("Bernard"), color="#39AA45")
 
 
 
-
 # The game starts here.
 
 label start:
+
+
+    init python:
+        config.allow_skipping = False
 
     $ christmas_spirit = 0
     $ santa_aff = 0
