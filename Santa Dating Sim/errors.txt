@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 301: end of line expected.
-    init python:
-    ^
+File "game/script.rpy", line 123: expected statement.
+    jump_close_game
+                   ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Dec 14 00:24:32 2020
+Wed Dec 16 13:22:41 2020

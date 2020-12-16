@@ -234,6 +234,296 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
+init python: ### just setting variables in advance so there are no undefined variable problems
+     timer_range = 15
+     timer_jump = "close_game"
+     time = 15
+     end_time = 0
+
+screen countdown():
+
+
+    #$ time = t
+    #$ timer_range = range
+    # python:
+    #     if(timer_started == False):
+    #         timer_started = True
+    #         timer_on = True
+
+    timer 0.01 repeat True action If([time > 0, timer_on == True], true=SetVariable('time', time - 0.01), false=[Hide('countdown'), Jump(timer_jump)])
+
+        ### ^this code decreases variable time by 0.01 until time hits 0, at which point, the game jumps to label timer_jump (timer_jump is another variable that will be defined later)
+
+    bar value time range timer_range xalign 0.01 yalign 0.01 xmaximum 300 #at alpha_dissolve
+        # ^This is the timer bar.
+
+screen baking_game():
+
+
+    zorder 100
+
+    imagebutton:
+        idle "images/baking_background.png"
+        xalign 0.0
+        yalign 0.0
+
+    #If(time <=0, true=setVariable('time', 5))
+
+
+
+    timer 0.01 repeat True action If(time > 0, true=[SetVariable('time', time - 0.01)], false=[Hide('baking_game')])
+
+    bar value time range timer_range xalign 0.01 yalign 0.01 xmaximum 300
+
+    timer 0.05 action Show("empty_baking_sheet")
+
+    # if(len(baking_icing) == 10):
+    #     timer 0.0001 action [SetVariable('time', end_time)]
+
+init python:
+    baking_spots = set()
+    baking_icing = set()
+
+screen empty_baking_sheet():
+
+    #$ baking_spots = {}
+
+    zorder 101
+
+    imagebutton:
+        idle "images/baking_tray_blank.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.5
+
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_spots, (3, 0.5, 0.35)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_spots, (8, 0.5, 0.65)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.375
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_spots, (2, 0.375, 0.35)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.375
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_spots, (7, 0.375, 0.65)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.250
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_spots, (1, 0.25, 0.35)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.250
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_spots, (6, 0.25, 0.65)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.625
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_spots, (4, 0.625, 0.35)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.625
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_spots, (9, 0.625, 0.65)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.75
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_spots, (5, 0.75, 0.35)), Show("baking_spot")]
+
+    imagebutton:
+        idle "images/baking_spot_empty.png"
+        xalign 0.75
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_spots, (10, 0.75, 0.65)), Show("baking_spot")]
+
+screen full_baking_sheet():
+
+    #$ baking_spots = {}
+
+    zorder 101
+
+    imagebutton:
+        idle "images/baking_tray_blank.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.5
+
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_icing, (3, 0.5, 0.35)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.5
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_icing, (8, 0.5, 0.65)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.375
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_icing, (2, 0.375, 0.35)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.375
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_icing, (7, 0.375, 0.65)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.250
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_icing, (1, 0.25, 0.35)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.250
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_icing, (6, 0.25, 0.65)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.625
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_icing, (4, 0.625, 0.35)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.625
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_icing, (9, 0.625, 0.65)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.75
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.35
+        action [AddToSet(baking_icing, (5, 0.75, 0.35)), Show("baking_icing")]
+
+    imagebutton:
+        idle "images/baking_spot_cooked.png"
+        xalign 0.75
+        yalign 0.0
+        at transform:
+            linear 0.3 yalign 0.65
+        action [AddToSet(baking_icing, (10, 0.75, 0.65)), Show("baking_icing")]
+
+
+screen baking_spot():
+
+    zorder 102
+    for i in baking_spots:
+        imagemap:
+            ground "images/baking_spot_full.png"
+            xalign i[1]
+            yalign i[2]
+
+    if(len(baking_spots) == 10):
+        timer 0.001 action [Hide("empty_baking_sheet"), Show("full_baking_sheet"), Hide("baking_spot")]
+        #timer 0.05 action []
+
+screen baking_icing():
+
+    zorder 103
+    for i in baking_icing:
+        imagemap:
+            ground "images/baking_spot_icing.png"
+            xalign i[1]
+            yalign i[2]
+
+    if(len(baking_icing) == 10):
+        timer 0.0001 action [SetVariable('end_time', time), Show("End_Baking_Game")]
+
+screen End_Baking_Game():
+
+    zorder 104
+
+    bar value end_time range timer_range xalign 0.01 yalign 0.01 xmaximum 300
+
+    $ win_time = timer_range - end_time
+
+    text "You completed the minigame!" size 40 color "#19A317" xalign 0.5 yalign 0.5
+
+#screen baking_game_part_2():
+
+        # for i in baking_spots:
+        #     imagemap:
+        #         ground "images/baking_spot_full.png"
+        #         xalign 0.0
+        #         yalign 0.0
+    # for i in baking_spots:
+    #     for j in i:
+    #         imagemap:
+    #             ground "images/baking_spot_full.png"
+    #             xalign j
+    #             yalign j
+        #print(i)
+
+
 # screen save_menu():
 #
 #     zorder 90
@@ -256,6 +546,69 @@ style choice_button_text is default:
 ## the player has not explicitly hidden the interface.
 # init python:
 #     config.overlay_screens.append("save_menu")
+
+
+screen game_map():
+
+    imagebutton:
+        idle "images/courtyard_icon.png"
+        hover "images/courtyard_icon_hover.png"
+        xalign 0.5
+        yalign 0.8
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    imagebutton:
+        idle "images/frozen_lake_icon.png"
+        hover "images/frozen_lake_icon_hover.png"
+        xalign 0.8
+        yalign 0.34
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    imagebutton:
+        idle "images/santa_office_icon.png"
+        hover "images/santa_office_icon_hover.png"
+        xalign 0.15
+        yalign 0.3
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    imagebutton:
+        idle "images/toy_shop_icon.png"
+        hover "images/toy_shop_icon_hover.png"
+        xalign 0.08
+        yalign 0.7
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    imagebutton:
+        idle "images/stables_icon.png"
+        hover "images/stables_icon_hover.png"
+        xalign 0.85
+        yalign 0.75
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    imagebutton:
+        idle "images/kitchen_icon.png"
+        hover "images/kitchen_icon_hover.png"
+        xalign 0.5
+        yalign 0.2
+        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+
+    text "Click a location you would like to visit:" xalign 0.5 yalign 0.05
+
+init python:
+    interaction_counter_img = "images/day_counter_0.png"
+
+screen day_menu():
+
+    hbox:
+
+        xalign 0.0
+        yalign 0.0
+
+
+
+        imagemap:
+            ground interaction_counter_img
+
 
 
 ## Quick Menu screen ###########################################################
@@ -309,6 +662,7 @@ screen quick_menu():
 ## the player has not explicitly hidden the interface.
 init python:
     config.overlay_screens.append("quick_menu")
+    #config.overlay_screens.append("day_menu")
 
 default quick_menu = True
 
@@ -352,6 +706,9 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
+
+            # imagemap:
+            #     ground "gui/snow3.gif"
 
             textbutton _("Start") action Start()
 
@@ -1099,6 +1456,7 @@ screen keyboard_help():
     hbox:
         label "V"
         text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
+
 
 
 screen mouse_help():
