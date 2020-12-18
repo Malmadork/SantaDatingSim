@@ -34,6 +34,10 @@ label start:
         renpy.image("int_counter_2", Image("images/int_counter_2.png", xalign=0.01, yalign=0.01))
         renpy.image("int_counter_3", Image("images/int_counter_3.png", xalign=0.01, yalign=0.01))
 
+        renpy.image("day_count_0", Image("images/day_count_0.png", xalign=0.01, yalign=0.01))
+        renpy.image("day_count_1", Image("images/day_count_1.png", xalign=0.01, yalign=0.01))
+        renpy.image("day_count_2", Image("images/day_count_2.png", xalign=0.01, yalign=0.01))
+
         renpy.image("dec19th_img", Image("images/dec19th_img.png", xalign=0.01, yalign=0.16))
         renpy.image("dec20th_img", Image("images/dec20th_img.png", xalign=0.01, yalign=0.16))
         renpy.image("dec21st_img", Image("images/dec21st_img.png", xalign=0.01, yalign=0.16))
@@ -97,11 +101,30 @@ label start:
 
             return mf
 
+        def get_highest_dual():
+            arr = []
+            claus_a = ["claus", claus_aff]
+            bernard_a = ["bernard", bernard_aff]
+            krampus_a = ["krampus", krampus_aff]
+            jack_a = ["jack", jack_aff]
+            clarice_a = ["clarice", clarice_aff]
+
+            arr.append(claus_a)
+            arr.append(bernard_a)
+            arr.append(krampus_a)
+            arr.append(jack_a)
+            arr.append(clarice_a)
+
+            arr.sort(key=sort_aff, reverse=True)
+
+            return [arr[0], arr[1]]
+
+
         settings = ['Courtyard', 'Toy Shop', 'Santa\'s Office', 'Kitchen', 'Frozen Lake', 'Stables']
 
         day = 1
         interaction = 0
-        max_interactions = 4
+        max_interactions = 3
 
         current_location = 'None'
         areas_visited = []
@@ -112,11 +135,11 @@ label start:
 
     scene bg room
 
-    show int_counter_0:
+    show day_count_0:
         xalign 0.01
         yalign 0.01
 
-    show dec19th_img:
+    show dec21st_img:
         xalign 0.01
         yalign 0.16
 
@@ -238,7 +261,7 @@ label start:
 
         hide Claus Rough with dissolve
 
-        call add_interaction
+        #call add_interaction
 
         "You head back into the Toy Shop as {color=#20943A}Claus{/color} excuses you. All that hot chocolate and peppermint really made you hungry. Maybe you should go to the Kitchen next and get a bite to eat."
 
@@ -272,7 +295,7 @@ label start:
                 $ krampus_aff -= 5
 
         hide Krampus Rough with dissolve
-        call add_interaction
+        #call add_interaction
         jump stables_interaction_day_1_1
 
     label stables_interaction_day_1_1:
@@ -302,7 +325,7 @@ label start:
                 $ clarice_aff += 0
 
         hide Clarice Rough with dissolve
-        call add_interaction
+        #call add_interaction
         "You head outside, realizing it just started to get dark."
 
         jump frozen_lake_interaction_day_1_1
@@ -330,10 +353,12 @@ label start:
 
         hide Jack Rough with dissolve
         "Jack skates away from you, and you decide to call it a day. You can't wait to start helping around the workshop tomorrow."
+        show dream_background with dissolve
         "As you sleep, you start dreaming about a mysterious figure that keeps changing shape. What could it mean?"
+        hide dream_background with dissolve
 
         pause 1.0
-        call add_interaction
+        #call add_interaction
 
         jump game_map
 
@@ -345,7 +370,7 @@ label start:
             if day == 2:
                 "You wander around the fully decorated tree, and decide to try to visit another area."
 
-                jump game_map
+            jump game_map
         else:
             if day == 2:
                 "Tying your snow boots and wrapping yourself in a scarf, you head out to the courtyard to decorate the central tree. The gigantic tree is at least 4 times your size. Tinsel in hand you stand there wondering how you, let alone the elves, are going to decorate this thing."
@@ -363,6 +388,49 @@ label start:
 
                 show Claus Rough at left
                 show Bernard Rough at right
+
+                # could do an small image left of dialogue to show who is talking
+
+                claus "Come now Bernard, you can’t expect everything to go to plan. Everyone makes mistakes from time to time."
+                claus "The elves are doing their best to get everything done in time for Christmas. Why don’t you let them off the hook for now? Besides, it will take more time to scold them than to just help them."
+
+                bernard "Forgive my rudeness sir, but we can’t afford any major screw-ups. Every mistake is time wasted."
+                bernard "And it’s exactly because Christmas is almost here that people should do everything correctly the first time around. The elves will only learn if I’m hard on them."
+
+                me "What's going on?"
+                "The two of them look to you as you approach."
+
+                claus "Ah, hello there. We were just discussing how to handle when the elves make a mistake. Bernard seems to believe scolding is the answer-"
+
+                bernard "So they’ll learn their lesson and not do it again. If you don’t reprimand them they’ll just do it again."
+
+                menu:
+                    "{color=#20943A}Claus{/color} and {color=#39AA45}Bernard{/color}" "What do you think?"
+
+                    "I think learning to forgive and let go is what the Christmas spirit is all about.":
+                        bernard "I thought you were more sensible than this. Don’t come complaining to me when things go wrong."
+                        "Bernard makes a huffing sound at you and walks away toward the Toy Shop."
+
+                        hide Bernard Rough with dissolve
+
+                        claus "It seems I was right to hire you. Bernard may be strict but he does keep this place running for me. Thanks for keeping up employee morale in this stressful time."
+                        "He smiles at you and heads back to his Office."
+
+                        hide Claus Rough with dissolve
+
+                        $ bernard_aff -= 1
+                        $ claus_aff += 1
+
+                    "Mistakes can cause major setbacks.":
+                        bernard "Finally, someone who gets how important this matter is. With you here, I bet we can get these elves in top shape before Christmas."
+                        "With a triumphant look and smile in your direction Bernard heads back into the Toy Shop."
+
+                        claus "It’s a shame to hear that. I was hoping you would be a bit more compassionate to the employees here."
+                        "Claus leaves with a sad look on his face back to his Office."
+
+                        $ bernard_aff += 1
+                        $ claus_aff -= 1
+
 
                 jump game_map
 
@@ -788,38 +856,32 @@ label start:
                 areas_visited.clear()
 
         python:
-            if(renpy.showing("int_counter_0")):
-                renpy.hide("int_counter_0")
-                renpy.show("int_counter_1")
-            elif(renpy.showing("int_counter_1")):
-                renpy.hide("int_counter_1")
-                renpy.show("int_counter_2")
-            elif(renpy.showing("int_counter_2")):
-                renpy.hide("int_counter_2")
-                renpy.show("int_counter_3")
-            elif(renpy.showing("int_counter_3")):
-                renpy.hide("int_counter_3")
-                renpy.show("int_counter_0")
+            if(renpy.showing("day_count_0")):
+                renpy.hide("day_count_0")
+                renpy.show("day_count_1")
+            elif(renpy.showing("day_count_1")):
+                renpy.hide("day_count_1")
+                renpy.show("day_count_2")
+            elif(renpy.showing("day_count_2")):
+                renpy.hide("day_count_2")
+                renpy.show("day_count_0")
+            # elif(renpy.showing("int_counter_3")):
+            #     renpy.hide("int_counter_3")
+            #     renpy.show("int_counter_0")
 
             if(day == 2):
-                renpy.hide("dec19th_img")
-                renpy.show("dec20th_img")
+                renpy.hide("dec21st_img")
+                renpy.show("dec22nd_img")
             elif(day == 3):
-                renpy.hide("dec20th_img")
-                renpy.show("dec21st_img")
+                renpy.hide("dec22nd_img")
+                renpy.show("dec23rd_img")
 
                 renpy.say("", "You awake to another day at the North Pole and ready to get back to work. Along the way to Santa’s Workshop, you start wondering where you would like to go first.")
 
             elif(day == 4):
-                renpy.hide("dec21st_img")
-                renpy.show("dec22nd_img")
-            elif(day == 5):
-                renpy.hide("dec22nd_img")
-                renpy.show("dec23rd_img")
-            elif(day == 6):
                 renpy.hide("dec23rd_img")
                 renpy.show("dec24th_img")
-            elif(day == 7):
+            elif(day == 5):
                 renpy.hide("dec24th_img")
                 renpy.show("dec25th_img")
 

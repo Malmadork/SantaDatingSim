@@ -782,12 +782,16 @@ screen main_menu():
 
     if gui.show_name:
 
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
+        # vbox:
+        #     text "[config.name!t]":
+        #         style "main_menu_title"
+        #
+        #     text "[config.version]":
+        #         style "main_menu_version"
 
-            text "[config.version]":
-                style "main_menu_version"
+        add "images/title.png":
+            xalign 1.0
+            yalign 1.0
 
 
 style main_menu_frame is empty
@@ -811,6 +815,8 @@ style main_menu_vbox:
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
+    color "#fff"
+    background "#fff"
 
 style main_menu_title:
     properties gui.text_properties("title")
