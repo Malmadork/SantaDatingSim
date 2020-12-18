@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 123: expected statement.
-    jump_close_game
-                   ^
+File "game/script.rpy", line 782: invalid syntax
+    elif(interaction == 2)):
+                           ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Dec 16 13:22:41 2020
+Thu Dec 17 18:44:17 2020
