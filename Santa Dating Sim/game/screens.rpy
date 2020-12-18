@@ -550,49 +550,51 @@ screen End_Baking_Game():
 
 screen game_map():
 
+    zorder 150
+
     imagebutton:
         idle "images/courtyard_icon.png"
         hover "images/courtyard_icon_hover.png"
         xalign 0.5
         yalign 0.8
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("courtyard_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
     imagebutton:
         idle "images/frozen_lake_icon.png"
         hover "images/frozen_lake_icon_hover.png"
         xalign 0.8
         yalign 0.34
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("frozen_lake_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
     imagebutton:
         idle "images/santa_office_icon.png"
         hover "images/santa_office_icon_hover.png"
         xalign 0.15
         yalign 0.3
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("santa_office_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
     imagebutton:
         idle "images/toy_shop_icon.png"
         hover "images/toy_shop_icon_hover.png"
         xalign 0.08
         yalign 0.7
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("toy_shop_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
     imagebutton:
         idle "images/stables_icon.png"
         hover "images/stables_icon_hover.png"
         xalign 0.85
         yalign 0.75
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("stables_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
     imagebutton:
         idle "images/kitchen_icon.png"
         hover "images/kitchen_icon_hover.png"
         xalign 0.5
         yalign 0.2
-        action Jump("add_interaction")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
+        action Jump("kitchen_init")#[SetVariable("interaction", interaction + 1), If(interaction >= 3, true=[SetVariable("interaction", 0), SetVariable("day", day + 1)]), Jump("test_menu")]
 
-    text "Click a location you would like to visit:" xalign 0.5 yalign 0.05
+    text "Pick an area to manage:" xalign 0.5 yalign 0.05
 
 init python:
     interaction_counter_img = "images/day_counter_0.png"
