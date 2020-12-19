@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 782: invalid syntax
-    elif(interaction == 2)):
-                           ^
-    
+File "game/screens.rpy", line 602: u'text_style' is not a keyword argument or valid child for the text statement.
+    text "Pick an area to manage:" text_style "map_style"
+                                             ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Dec 17 18:44:17 2020
+Fri Dec 18 23:48:29 2020
