@@ -122,7 +122,7 @@ label start:
                 mf = "{u}but it quickly dissipates into nothing. You can faintly pick up some scents in the air, but they are muddled together.{/u}"
             else:
                 if(arr[0][0] == "claus"):
-                    mf = "{u}, a red cap with a white fluffy microphone. You pick up the scent of chocolate and peppermint.{/u}"
+                    mf = "{u}a red cap with a white fluffy microphone. You pick up the scent of chocolate and peppermint.{/u}"
                 elif(arr[0][0] == "bernard"):
                     mf = "{u}a pocket watch ticking in the distance. You pick up the scent of sawdust, and hear a train whistle.{/u}"
                 elif(arr[0][0] == "krampus"):
@@ -221,11 +221,11 @@ label start:
     label init_ready:
 
         scene toy shop
-        "You go inside Santa’s Workshop, enter into Toy Shop."
+        "You go inside Santa’s Workshop."
 
     label toy_shop_a:
-        "Entering the Toy Shop, you immediately feel the energy of the Christmas season. All around you, tiny hammers are clacking, elves are bustling about, and toys are being charted off in every direction."
-        "As you stand there in wonder of the workshop your eyes land on an angry elf quickly heading towards you with a pocket watch in hand."
+        "Entering into the Toy Shop, you immediately feel the energy of the Christmas season. All around you, tiny hammers are clacking, elves are bustling about, and toys are being charted off in every direction."
+        "As you stand there in wonder of the workshop, your eyes land on an angry elf quickly heading towards you with a pocket watch in hand."
 
         show Bernard Rough with dissolve
 
@@ -252,18 +252,18 @@ label start:
                 "Your small smile at the joke slowly fades. You cough and look to the side."
                 bernard "Anyway..."
             "'Sir' seems a little excessive. Are you a knight?":
-                "Bernard looks at you and takes a deep breath in."
-                bernard "Oooo you're a jokester huh?"
+                "Bernard looks at you and takes in a deep breath."
+                bernard "Ooooh you're a joker huh?"
                 bernard "I will not tolerate rudeness in my employees."
 
                 $ bernard_aff -= 1
-            "Yes Sir.":
+            "Yes, Sir.":
                 "You nod and listen to what Bernard has to say."
 
         jump bernard_day_1_final_interaction
 
     label bernard_day_1_menu_1_2:
-        unknown "I am the Head Elf of Santa's Workshop, and you're unapologetically late. I will not tolerate rudeness in my employees."
+        unknown "I am the Head Elf at Santa's Workshop, and you're unapologetically late. I will not tolerate rudeness in my employees."
         "He shakes his head."
         bernard "My name is Bernard. You may only address me as Sir."
 
@@ -272,7 +272,7 @@ label start:
         jump bernard_day_1_final_interaction
 
     label bernard_day_1_final_interaction:
-        bernard "This here is the Toy Shop where all the toys are made. Your job will be to check all of the stations and make sure everything is ready for Christmas."
+        bernard "This here is the Toy Shop where all the toys are made. Your job will be to monitor all of the stations and make sure everything is ready for Christmas."
         bernard "Follow me to get your assignment."
 
     label santa_office_day_1_interaction:
@@ -280,9 +280,9 @@ label start:
         ### todo: Insert an image for location!!!
         scene santa office
         "{color=#39AA45}Bernard{/color} leads you to a room with a sign above the door that reads {i}A Life Full of Wonder is a Life Full of Joy.{/i}"
-        "As {color=#39AA45}Bernard{/color} opens the door, you’re greeted by an overwhelming scent of hot chocolate, peppermint and cinnamon. Red walls with gold trims dazzle the room as magical toys float through the air. Pacing around a desk in the center of the room is a large man dressed all in red."
-        "He seems to be talking into the end of his hat as his beard flutters in the wind."
-        "The man stops pacing as {color=#39AA45}Bernard{/color} approaches. He quickly tells the man something then leaves the room. The man turns to greet you as the door shuts behind you."
+        "As {color=#39AA45}Bernard{/color} opens the door, you’re greeted by an overwhelming scent of hot chocolate, peppermint and cinnamon. Red walls with gold trim shine bright in the room as magical toys float through the air. Pacing around a desk in the center of the room is a large man dressed all in red."
+        "He seems to be talking into the end of his hat as he strokes his white beard."
+        "The man stops pacing as {color=#39AA45}Bernard{/color} approaches. Bernard quickly tells the man something then leaves the room. The man turns to greet you as the door shuts behind you."
 
         hide Bernard Rough with dissolve
         show Claus Rough with dissolve
