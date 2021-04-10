@@ -57,11 +57,11 @@ label start:
         renpy.image("dream_background", Image("images/dream_background.png"))
 
         # Images for the characters
-        renpy.image("Bernard Rough", Image("images/Bernard Rough.png"))
-        renpy.image("Claus Rough", Image("images/Claus Rough.png"))
-        renpy.image("Jack Rough", Image("images/Jack Rough.png"))
-        renpy.image("Krampus Rough", Image("images/Krampus Rough.png"))
-        renpy.image("Clarice Rough", Image("images/Clarice Rough.png"))
+        renpy.image("Bernard Rough", Image("images/BernardFin.png"))
+        renpy.image("Claus Rough", Image("images/ClausFin.png"))
+        renpy.image("Jack Rough", Image("images/JackFin.png"))
+        renpy.image("Krampus Rough", Image("images/KrampusFin.png"))
+        renpy.image("Clarice Rough", Image("images/ClariceFin.png"))
 
         # Images for head shots in dual interactions
         renpy.image("Head Bernard", Image("images/Head Bernard.png"))
@@ -76,7 +76,7 @@ label start:
         renpy.image("stables", Image("images/stables.jpeg"))
         renpy.image("santa office", Image("images/santa_office.jpeg"))
         renpy.image("kitchen", Image("images/kitchen_bg.jpeg"))
-        renpy.image("map_image", Image("images/map_image.png"))
+        renpy.image("map_image", Image("images/mapFin.png"))
 
         # affection counters
         claus_aff = 0
