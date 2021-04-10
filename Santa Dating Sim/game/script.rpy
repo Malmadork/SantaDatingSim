@@ -57,11 +57,11 @@ label start:
         renpy.image("dream_background", Image("images/dream_background.png"))
 
         # Images for the characters
-        renpy.image("Bernard Rough", Image("images/Bernard Rough.png"))
-        renpy.image("Claus Rough", Image("images/Claus Rough.png"))
-        renpy.image("Jack Rough", Image("images/Jack Rough.png"))
-        renpy.image("Krampus Rough", Image("images/Krampus Rough.png"))
-        renpy.image("Clarice Rough", Image("images/Clarice Rough.png"))
+        renpy.image("Bernard Rough", Image("images/BernardFin.png"))
+        renpy.image("Claus Rough", Image("images/ClausFin.png"))
+        renpy.image("Jack Rough", Image("images/JackFin.png"))
+        renpy.image("Krampus Rough", Image("images/KrampusFin.png"))
+        renpy.image("Clarice Rough", Image("images/ClariceFin.png"))
 
         # Images for head shots in dual interactions
         renpy.image("Head Bernard", Image("images/Head Bernard.png"))
@@ -76,7 +76,7 @@ label start:
         renpy.image("stables", Image("images/stables.jpeg"))
         renpy.image("santa office", Image("images/santa_office.jpeg"))
         renpy.image("kitchen", Image("images/kitchen_bg.jpeg"))
-        renpy.image("map_image", Image("images/map_image.png"))
+        renpy.image("map_image", Image("images/mapFin.png"))
 
         # affection counters
         claus_aff = 0
@@ -126,7 +126,7 @@ label start:
                     mf = "{u}a red cap with a white fluffy microphone. You pick up the scent of chocolate and peppermint.{/u}"
 
                 elif(arr[0][0] == "bernard"):
-                    mf = "{u}a pocket watch ticking in the distance. You pick up the scent of sawdust, and hear a train whistle.{/u}"
+                    mf = "{u}a pocket watch ticking in the distance. You pick up the scent of sawdust and hear a train whistle.{/u}"
                 elif(arr[0][0] == "krampus"):
                     mf = "{u}a pair of curling horns. You pick up the scent of gingerbread and sugar.{/u}"
                 elif(arr[0][0] == "jack"):
@@ -301,7 +301,7 @@ label start:
         santa "You are here for the new position, right? {color=#39AA45}Bernard{/color} filled me in."
         santa "It's good to have the extra help at this time of year. Here is the list of tasks that need to be completed over the next week."
 
-        "Santa hands you a piece of parchment paper. The assignments and locations written in a neat cursive. Turning the paper over reveals a map of the North Pole. You recognize a few of the areas."
+        "Santa hands you a piece of parchment paper. The assignments and their locations are written in a neat cursive. Turning the paper over reveals a map of the North Pole. You recognize a few of the areas."
 
         santa "You should take some time to familiarize yourself with the area. You can find the Kitchen next to the Toy Shop and the Stables are outback next to the Frozen Lake."
 
@@ -310,7 +310,7 @@ label start:
             santa "Do you have any other questions?"
 
             "How would you like me to address you sir?":
-                claus "Oh, I'm sorry, how rude of me. You can call me 'Claus', but I prefer it to Santa. I'm happy to have you on board here. It will be a real help."
+                claus "Oh, I'm sorry, how rude of me. You can call me 'Claus', I prefer it to Santa. I'm happy to have you on board here. It will be a real help."
 
                 $ claus_aff += 1
 
@@ -331,24 +331,24 @@ label start:
                 jump santa_interaction_day_1_1
 
     label santa_interaction_day_1_1:
-        claus "Now if you'll excuse me, I'm really busy with Christmas being right around the corner. If you need anything don't be afraid of asking Bernard. Oh! And feel free to help yourself to snacks from the Kitchen."
+        claus "Now if you'll excuse me, I'm really busy with Christmas being right around the corner. If you need anything don't be afraid to ask Bernard. Oh! And feel free to help yourself to snacks from the Kitchen."
         claus "I'm glad to have your help."
 
         hide Claus Rough with dissolve
 
         #call add_interaction
 
-        "You head back into the Toy Shop as {color=#20943A}Claus{/color} excuses you. All that hot chocolate and peppermint really made you hungry. Maybe you should go to the Kitchen next and get a bite to eat."
+        "You head back into the Toy Shop after {color=#20943A}Claus{/color} excuses you. The overwhelming smell of hot chocolate and peppermint really made you hungry. Maybe you should go to the Kitchen next and get a bite to eat."
 
     label kitchen_interaction_day_1_1:
 
         scene kitchen
 
-        "You find the Kitchen off the Toy Shop like {color=#20943A}Claus{/color} said. The Kitchen was massive in comparison to the elves who were snacking on milk and cookies."
+        "You find the Kitchen off the Toy Shop like {color=#20943A}Claus{/color}'s map showed. The Kitchen was massive in comparison to the elves who were snacking on milk and cookies."
         "Despite all the traffic, everything was quite clean. The marble countertops glistened while the hanging pots reflected the bright hats of the elves."
         "Following the scent of peppermint and gingerbread, you inquire about getting a bit to one of the elves. They point you to a man by one of the large ovens."
 
-        "Removing a tray of cookies from the oven is a tall figure with horns and bull like legs. You notice he's only got on a pink apron with a gingerbread man on the front, but maybe if you're covered in black fur, you don't need clothes. He puts the tray down on the counter and looks up at you."
+        "Removing a tray of cookies from the oven is a tall figure with horns and bull like legs. You notice he's only got on a pink apron with a gingerbread man on the front. I guess if you're covered in black fur, you don't need clothes. He puts the tray down on the counter and looks down at you."
 
         show Krampus Rough with dissolve
 
@@ -362,7 +362,7 @@ label start:
                 $ krampus_aff += 1
 
             "I'm hungry.":
-                krampus "What do you expect me to do about that? Just because I cook means I'm ombligated to feed you huh? I guess you're the new person they hired. I'm Krampus and I run this kitchen. Take these cookies and get out."
+                krampus "What do you expect me to do about that? Just because I'm a baker here, I'm ombligated to feed you, huh? I guess you're the new person they hired. I'm Krampus and I run this kitchen. Take these cookies and get out."
 
                 $ krampus_aff -= 1
 
@@ -379,13 +379,13 @@ label start:
 
         scene stables
 
-        "Munching on the freshly baked cookies, you see the stables and head over there because you want to see the famous reindeers. You walk in and see something like a well built rug as the scent of hay hits you."
+        "Munching on the freshly baked cookies, you see the stables and head over there to see the famous reindeers. You walk in and see something like a well built rug as the scent of hay hits you."
 
         show Clarice Rough with dissolve
 
         menu:
 
-            unknown "Ello, how can I help ya?"
+            unknown "'Ello, how can I help ya?"
 
             "Hello. I'm the new manager. I'm just looking around. It's nice to meet you.":
                 clarice "So ye're the new boss. Welcome to the North Pole. Name's Clarice by the way and I'm the caretaker of these stables. Let me know if ya need anything."
@@ -393,19 +393,19 @@ label start:
                 $ clarice_aff += 1
 
             "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa":
-                clarice "Oh no, don't scream! Yer gonna upset the reindeer. I ain't gonna hurt ya. M' name's Clarice. I'm the caretaker of these stables."
+                clarice "Oh no, don't scream! Yer gonna upset the reindeer. I ain't gonna hurt ya. Me name's Clarice. I'm the caretaker of these stables."
 
                 $ clarice_aff += 1
 
             "So you watch over the reindeer?":
-                clarice "Yup! I feed 'em, brush 'em, train 'em. All day, Everyday so they're ready for Christmas. Oh! An' don't believe them fairy tales about reindeer and grandmas either. These guys won't run ov'r a fly. They're well trained."
+                clarice "Yup! I feed 'em, brush 'em, train 'em. All day, everyday, so they're ready for Christmas. Oh! An' don't believe them fairy tales about reindeer and grandmas either. These guys won't run ov'r a fly. They're well trained."
                 clarice "Name's Clarice. I have to prepare the reindeer's food so I must be goin', but feel free to come see the reindeer anytime ye want."
 
                 $ clarice_aff += 0
 
         hide Clarice Rough with dissolve
         #call add_interaction
-        "You head outside, realizing it just started to get dark."
+        "You head outside, realizing it has started to get dark."
 
         jump frozen_lake_interaction_day_1_1
 
@@ -417,19 +417,19 @@ label start:
         show Jack Rough with dissolve
 
         unknown "And who are you? I haven't seen your face before. Are you new around here?"
-        me "I'm the new manager at the toy shop. And who are you?"
+        me "I'm the new manager at the Toy Shop. And who are you?"
 
         jack "Name's Jack Frost. Everyone calls me Jack though. You showed up during the busiest time of year."
 
         menu:
             "Everyone certainly seems to be busy. Well, except you of course.":
-                jack "Excuse you. Before you judge me, no, I'm not skipping work. I don't work at the workshop. I'm allowed to just come and go whenever I want to."
+                jack "Excuse you. Before you judge me, no, I'm not skipping work. I don't work at the workshop. I'm allowed to come and go whenever I want to."
 
                 $ jack_aff -= 1
 
             "I've got my work cut out for me. What are you doing out here? It's so peaceful.":
                 jack "I'm having fun skating. It's great playing out here in the snow. You should join me sometime. The cold's always better with two."
-                "He winks, and something sparkles in air."
+                "He winks, and something sparkles in the air."
 
                 $ jack_aff += 1
 
@@ -461,15 +461,15 @@ label start:
 
         if current_location in areas_visited:
             if day == 2:
-                "You wander around the fully decorated tree, and decide to try to visit another area."
+                "You wander around the fully decorated tree, and decide to visit another area."
             elif day == 3:
-                "You wander around the fully decorated tree. You think a bit about what happened earlier, then you decide to try to visit another area."
+                "You wander around the fully decorated tree. You think a bit about what happened earlier, then you decide to visit another area."
             elif day == 4:
-                "You wander around the tree. Some elves are gathered, waiting for Claus to leave. You decide to look at another area."
+                "You wander around the tree. Some elves are gathered, waiting for Claus to leave. You decide to go to another area."
             jump game_map
         else:
             if day == 2:
-                "Tying your snow boots and wrapping yourself in a scarf, you head out to the courtyard to decorate the central tree. The gigantic tree is at least 4 times your size. Tinsel in hand you stand there wondering how you, let alone the elves, are going to decorate this thing."
+                "Tying your snow boots and wrapping yourself in a scarf, you head out to the courtyard to decorate the central tree. The gigantic tree is at least 4 times your size. Tinsel in hand, you stand there wondering how you are going to decorate this thing."
                 "Holding a ball of lights, an elf wearing a mini jetpack zips around the tree stringing lights as he goes."
                 "They whistle and another elf zips over. The elves move to either side of you and slowly lift you off the ground."
                 "After suppressing a momentary feeling of panic, you smile and nod to the elves. They bring you towards the tree and circle you through the air around it. Soon the tree is completely decorated with ornaments, popcorn, and dazzling lights."
@@ -524,34 +524,34 @@ label start:
 
         if current_location in areas_visited:
             if day == 2:
-                "You walk back into the Toy Shop. Everyone seems busy with their work, and Bernard is inspecting the finished toys. You decide to head out and help somewhere else."
+                "You walk into the Toy Shop. Everyone seems busy with their work, and Bernard is inspecting the finished toys. You decide to head out and help somewhere else."
             elif day == 3:
-                "You walk back into the Toy Shop. Everyone seems busy with their work, and Bernard is giving a final inspection on some of the consoles. You decide to head out and help somewhere else."
+                "You walk into the Toy Shop. Everyone seems busy with their work, and Bernard is giving a final inspection of some of the consoles. You decide to head out and help somewhere else."
             elif day == 4:
-                "You walk back into the Toy Shop. Bernard has a slight smile on his face as he prepares the last few toys. You decide to head out for now."
+                "You walk into the Toy Shop. Bernard has a slight smile on his face as he prepares the last few toys. You decide to head out for now."
             jump game_map
         else:
             if day == 2:
                 "You walk into the Toy Shop and see Bernard intensely inspecting some toys. He must have noticed a problem because he's pointing at the toy and audibly lecturing one of the elves. Turning around, he sees you and walks over."
                 show Bernard Rough with dissolve
-                bernard "You're late. I've got toy painting and assembly to do today. What do you want to do today?"
+                bernard "You're late. I've got toy painting and assembly to do today. Which will you be doing?"
 
                 menu:
                     "(Go help Bernard.)":
                         menu:
                             "I've come to help with the toy painting.":
                                 bernard "Alright, follow me."
-                                "He leads you over to a table with some wooden toy nutcrackers and paints of various hues. Both you and him sit at the table."
+                                "He leads you to a table with some wooden toy nutcrackers and paints of various hues. Both you and him sit at the table."
                                 bernard "I'll show you how to paint them today since you don't have any experience yet. Watch carefully."
                                 "He places a nutcracker in front of each of us and then hands you a brush before grabbing one for himself."
                                 bernard "You'll paint the hat and shoes black, the chest red, and the pants blue."
-                                "He proceeds to demonstrate how it's done, and puts it between us when finished to use as an example."
+                                "He proceeds to demonstrate how it's done, and puts the finished nutcraker between us to use as an example."
                                 "After painting for a while, you consider asking him a question."
                                 $ bernard_aff += 1
 
                             "I've come to help with toy assembly.":
                                 bernard "Alright, follow me."
-                                "He leads you over to a table with some wooden parts of various sizes and shapes. Both you and him sit at the table."
+                                "He leads you to a table with some wooden parts of various sizes and shapes. Both you and him sit at the table."
                                 bernard "I'll show you how to assemble the toy planes, trains, and automobiles today since you don't have any experience yet."
                                 "Bernard proceeds to build each of the different toys with components from each pile. Once completed, he puts the newly constructed toys in front of us to use as a reference."
                                 "After amassing a good stock of toys, you consider asking him a question."
@@ -591,20 +591,20 @@ label start:
 
                 jump game_map
             elif day == 3:
-                "As you walk into the Toy Shop, Bernard is waiting for you to by the door."
+                "As you walk into the Toy Shop, Bernard is waiting for you by the door."
                 show Bernard Rough with dissolve
 
-                bernard "Good.You’re here. I need you to come with me to the console section."
+                bernard "Good. You’re here. I need you to come with me to the console section."
 
                 menu:
                     "Alright, lead the way.":
                         "You follow Bernard over to a room at the back of the Toy Shop. Inside you see walls full of game consoles from every generation. Several elves are scrambling around the various tables and conveyors trying to assemble as many consoles as possible."
                         "You see a Soulja Boy console on one of the shelves and wonder why anyone would wish for that for Christmas when Bernard speaks up."
-                        bernard "We are currently trying to meet the demand for PS5 and Xbox Series X consoles, but have run into an issue where a couple of the elves are sick. The two of us will have to cover the slack. We need to playtest the consoles and check for bugs."
-                        "Bernard sighs and mutters as he heads off to some TVs..."
+                        bernard "We are currently trying to meet the demand for PS5 and Xbox Series X consoles, but have run into an issue with a couple of the elves being sick. The two of us will have to cover the slack. We need to playtest the consoles and check for bugs."
+                        "Bernard sighs as he heads off to some TVs..."
                         bernard "Of course, this just has to happen. Right when we’re so close to Christmas."
 
-                        "You follow Bernard to a set of tvs each with a couple of consoles hooked up to them. He pops  ‘Bugsnax’ into my console and ‘Knack II’ in his. We sit down and start playing. Bernard tells me to note if I experience any issues with the system."
+                        "You follow Bernard to a set of TVs each with a couple of consoles hooked up to them. He pops ‘Bugsnax’ into my console and ‘Knack II’ in his. We sit down and start playing. Bernard tells me to note if I experience any issues with the system."
                         "After playing for a while, you glance over at Bernard who’s focused on the screen. He appears to be muttering to himself, almost like he’s talking to the game."
 
                         menu:
@@ -614,7 +614,7 @@ label start:
                                 menu:
                                     "Do you really only want to work all the time?":
                                         bernard "It doesn’t really matter what I want. I’m the Head Elf here. Without me things would be chaos. I have to make sure nothing goes wrong and I can’t do that if I’m ‘having fun’."
-                                        "You can tell that Bernard means what he says, but there is something melancholy about his tone. You notice that his head is down and he’s staring at the controller. You realize there is one more thing you need to say."
+                                        "You can tell that Bernard means what he says, but there is something melancholy about his tone. You notice that his head is down and he’s staring at his controller. You realize there is one more thing you need to say."
                                         $ bernard_aff += 1
 
                                         menu:
@@ -628,7 +628,7 @@ label start:
                                                 $ areas_visited.append("Toy Shop")
                                                 jump game_map
 
-                                            "That's rough buddy.":
+                                            "That's rough, buddy.":
                                                 bernard "Ha, tell me about it. Nobody here understands what I go through everyday to make things perfect. Let’s hurry up and get this testing done. I’ve got other things that need to get done."
                                                 "Both of you go back to testing the consoles. The silence is slightly uncomfortable until you’re finally allowed to leave."
 
@@ -650,7 +650,7 @@ label start:
                                         menu:
                                             "It's not bad to want to focus on work.":
                                                 bernard "You say that, but everyone thinks I’m obsessed. What’s wrong with wanting everything to be perfect? You can’t do that by playing around."
-                                                "Bernard sounds angry, but slightly hurt. You feel that he’s trying to justify something though it feels more like he’s trying to prove it to himself. There is something more to Bernard that you’re curious to find out."
+                                                "Bernard sounds angry, but slightly hurt. You feel that he’s trying to justify something though it feels more like he’s trying to prove it to himself. There is something more to Bernard that you’re curious to uncover."
 
                                                 $ bernard_aff += 1
                                                 hide Bernard Rough with dissolve
@@ -690,7 +690,7 @@ label start:
                         hide Bernard Rough with dissolve
                         jump game_map
             elif day == 4:
-                "As you walk up the path to the Toy Shop, you hear shouting. In a rush of panic, you open the door to see what is going on."
+                "As you walk up the path to the Toy Shop, you hear shouting. In a rush of panic, you open the door to see what's going on."
                 "Near the center of the room, Bernard is screaming at a group of elves. This is the angriest you've ever seen him. You walk over to see what the problem is."
 
                 show Bernard Rough with dissolve
@@ -715,13 +715,13 @@ label start:
                 me "Bernard. Everything will be alright. We'll get the presents in time. I know it's Christmas Eve, but you've been a second from breaking since I got here. There's no need to be like this."
 
                 "Bernard nearly stops in his tracks but the need to get the consoles spurs him on."
-                bernard "Easy for you to say. You've been perfect since you got here. It's taken me years to get where I am and now I've gone and blown it. All I wanted was Christmas to be perfect."
+                bernard "Easy for you to say. You've been perfect since you got here. It's taken me years to get where I am and now I've gone and blown it. All I wanted was for Christmas to be perfect."
                 "The concern on your face makes Bernard open up completely."
                 bernard "All my life, Christmas has been the most important thing in my life. Stories of Santa flying through the night sky on a sled pulled by reindeer, of children all over the world waking up to find presents waiting for them."
                 bernard"The idea that this Workshop brought such joy to those kids. I knew that I wanted to be a part of it."
 
-                bernard "So, I joined as just another toy maker. Before I knew it, I was the head elf here. I kept telling myself that I was doing it for the children so I couldn't afford any mistakes."
-                bernard "I always pushed myself and so I thought that I needed to do the same to everyone else. That way of thinking, it's made me a real asshole huh?"
+                bernard "So, I joined as toy maker. Before I knew it, I was the Head Elf here. I kept telling myself that I was doing it for the children so I couldn't afford any mistakes."
+                bernard "I always pushed myself and thought that I needed to do the same to everyone else. That way of thinking, it's made me a real asshole, huh?"
 
                 menu:
                     "(Nod)":
@@ -747,11 +747,11 @@ label start:
 
         if current_location in areas_visited:
             if day == 2:
-                "You peer through the glass of the office you visited earlier. You decide not to bother Claus as he looks busy reading through some letters and check out another area."
+                "You peer through the glass of Claus' office. You decide not to bother Claus as he looks busy reading through some letters and check out another area."
             elif day == 3:
-                "You peer through the glass of the office you visited earlier. You decide not to bother Claus as he looks busy sorting out some presents and go to check out another area."
+                "You peer through the glass of Claus' office. You decide not to bother Claus as he looks busy sorting out some presents and go to check out another area."
             elif day == 4:
-                "You peer through the glass of the office you visited earlier. Claus' shoulders seem broader than usual and his eyes have a sparkle to them as he finishes some preparations."
+                "You peer through the glass of Claus' office. Claus' shoulders seem broader than usual and his eyes have a sparkle to them as he finishes some preparations."
             jump game_map
         else:
             if day == 2:
@@ -783,9 +783,9 @@ label start:
                                         $ claus_aff += 1
                                     "Why bother doing all that?":
                                         "Claus frowns a bit."
-                                        claus "If I do not, who will? I am Santa Claus; not some stranger at the mall. It is my responsibility to fufill the wonder of Christmas. I would think that would be obvious to everyone here."
+                                        claus "If I don't, who will? I am The Santa Claus; not some stranger at the mall. It is my responsibility to fufill the wonder of Christmas. I would think that would be obvious to everyone here."
 
-                                        "Leaving you in silence, you finish up the letters and see yourself out. You feel guilty as you walk out the door."
+                                        "In silence, you finish up the letters and see yourself out. You feel guilty as you walk out the door."
 
                                         $ claus_aff -= 1
 
@@ -821,14 +821,14 @@ label start:
 
                 menu:
                     "I was wondering if you need any help today.":
-                        "I can always use the help. Work keeps piling up on me as the clock ticks down. How about you help me with ..."
+                        "I can always use the help. Work keeps piling up as the clock ticks down. How about you help me with ..."
                         "He trails off as he notices the picture in your hands. The way he gets quiet as he sees the image makes you worried."
                         $ claus_aff += 1
 
                         menu:
                             "Sorry for looking at this, but this is you right?":
                                 claus "Yes, it’s me. It was taken in the early years after I took over Santa’s Workshop. Things were simpler back then and there was less to do."
-                                claus "Now there’s more of … of everything, but I’ll deliver the presents to all the children like I do every year. I’m Santa after all, who else is gonna do it."
+                                claus "Now there’s more of… of everything, but I’ll deliver the presents to all the children like I do every year. I’m Santa after all, who else is gonna do it?"
                                 "Claus had a smile on his face as he started to reminisce, but it quickly faded as he came back to present day."
 
                                 $ claus_aff += 1
@@ -871,7 +871,7 @@ label start:
                                                 claus "I appreciate the confidence, but that’s why I have to put so much effort in to ensure that all the children are happy. Things used to be so much easier."
                                                 "Claus sighs..."
                                                 claus "Anyway, can you help me finish the present inventory?"
-                                                "The two of you finish the present inventory. Claus’s mood seems a little better but something is still bothering him as you leave."
+                                                "The two of you finish the present inventory. Claus’ mood seems a little better but something is still bothering him as you leave."
 
                                                 $ claus_aff += 1
                                                 call add_interaction from _call_add_interaction_16
@@ -905,16 +905,16 @@ label start:
                         hide Claus Rough with dissolve
                         jump game_map
             elif day == 4:
-                "You go to Claus’s Office and notice Claus is frantically talking on his earpiece. You go in to see what is wrong. Claus notices as you walk in."
+                "You go to Claus’s Office and notice Claus is frantically talking on his earpiece. You go in to see what is wrong. Claus notices you as you walk in."
                 show Claus Rough with dissolve
-                claus "Good. You’re here. If I have to listen to the elves about proper present presentation. Even Krampus was nagging me to eat every bloody cookie and drink all my milk. Krampus!"
-                claus "He seriously has the nerve to tell me that I’m not acting like Santa. I’m delivering the presents aren’t I? What more can they expect from me? I don’t have time to treat every child like they’re some precious jewel!"
+                claus "Good. You’re here. If I have to listen to the elves about proper present presentation one more time. Even Krampus was nagging me to eat every bloody cookie and drink all my milk. Krampus!"
+                claus "He seriously has the nerve to tell me that I’m not acting like Santa. I’m delivering the presents, aren’t I? What more can they expect from me? I don’t have time to treat every child like they’re some precious jewel!"
                 "You could see the anger rising in Claus. He was no longer {i}Santa{/i}, just a man who had been pushed past the point of exhaustion. You want to say something to help him."
 
                 menu:
                     "I’m here to help you. Remember?":
-                        claus "Yes, I remember. I needed … no, I need help and there you were. It was like a Christmas miracle, but a miracle doesn’t deliver all these presents. I do. And I just can’t keep up."
-                        "Claus slumps against his desk. A man defeated. You recall seeing something when at his office earlier and you go to retrieve it."
+                        claus "Yes, I remember. I needed… no, I need help and there you were. It was like a Christmas miracle, but a miracle doesn’t deliver all these presents. I do. And I just can’t keep up."
+                        "Claus slumps against his desk. A man defeated. You recall seeing something in his office earlier and you go to retrieve it."
                         $ claus_aff += 1
 
                     "What do you want me to do?":
@@ -966,11 +966,11 @@ label start:
             jump game_map
         else:
             if day == 2:
-                "You walk into the Kitchen and see it teeming with life as elves go to and fro between stations. The Christmas aroma washes over you as you see Krampus working at the island."
+                "You walk into the Kitchen and see it teeming with life as elves go to and fro between stations. The Christmas aroma washes over you as you see Krampus working at an island."
                 menu:
                     "(Walk over to Krampus)":
                         show Krampus Rough with dissolve
-                        krampus "You're back again are you? What do you want this time?"
+                        krampus "You're back again, are you? What do you want this time?"
                         menu:
                             "I would like to help out around here.":
                                 krampus "Really now? I guess you can help me bake some cookies. The elves are voracious little things that only consume sugar. They need a lot of cookies to keep up their pace and get everything done by Christmas."
@@ -1014,8 +1014,8 @@ label start:
                                                 jump game_map
 
 
-                                    "(You realize that it would be silly to ask, and decide not to)":
-                                        "You make a large amount of cookies until it is time for you to go. Krampus thanks you for the help and advises you wash up after you leave."
+                                    "(You realize that it would be silly to ask and decide not to)":
+                                        "You make a large amount of cookies until it is time for you to go. Krampus thanks you for the help and advises you to wash up when you leave."
                                         hide Krampus Rough with dissolve
                                         $ areas_visited.append("Kitchen")
                                         call add_interaction from _call_add_interaction_24
@@ -1046,13 +1046,13 @@ label start:
                         $ krampus_aff += 1
 
                         menu:
-                            "Did you not want to work with the elves":
+                            "Did you not want to work with the elves?":
                                 krampus "I feel that the elves and I have a mutual desire to stay away from each other. It’s easier this way because I can do what I want without having to worry about upsetting anyone."
                                 "You stand there a minute putting popcorn on your string when what he says finally sinks in."
 
                                 menu:
                                     "You’ve never upset me.":
-                                        krampus "Come on, I know I have a temper and my words never quite come out how I mean them too. I must have said something mean to you at least once, you’re just too nice to admit or too stupid to care."
+                                        krampus "Come on, I know I have a temper and my words never quite come out how I mean them too. I must have said something mean to you at least once, you’re just too nice to admit it or too stupid to care."
                                         "You suppress a small bit of laughter. Krampus was definitely abrasive but you could tell he never meant any harm with his words."
 
                                         $ krampus_aff += 1
@@ -1060,7 +1060,7 @@ label start:
                                         menu:
                                             "I think they wouldn’t mind if they got to know you.":
                                                 krampus "I want to think that was true but it’s been this way for a long time. I don’t see that changing anytime soon. The thought alone does bring a smile to my lips."
-                                                "Krampus did have a smile on his lips, but there was still sadness in his eyes. Once a significant pile of ornaments had been made, Krampus grabbed some up and left to start decorating. You watch him leave before doing the same."
+                                                "Krampus had a smile on his lips, but there was still sadness in his eyes. Once a significant pile of ornaments had been made, Krampus grabbed some up and left to start decorating. You watch him leave before doing the same."
 
                                                 $ krampus_aff += 1
                                                 hide Krampus Rough with dissolve
@@ -1070,7 +1070,7 @@ label start:
 
                                             "I just think it’s your pride getting in the way.":
                                                 krampus "My pride is the only thing that keeps me here. I won't give up my own Kitchen just because some elves don’t like me. I’m not the one with the problem."
-                                                "Krampus is clearly angry and doesn’t speak to for the rest of the time. When a large pile of decorations starts to form, Krampus grabs them up and leaves. You take that as a cue to do so as well."
+                                                "Krampus is clearly angry and doesn’t speak for the rest of the time. When a large pile of decorations start to form, Krampus grabs them up and leaves. You take that as a cue to do so as well."
 
                                                 $ krampus_aff -= 1
                                                 hide Krampus Rough with dissolve
@@ -1088,9 +1088,9 @@ label start:
 
                                         menu:
                                             "I think they could come around, eventually.":
-                                                krampus "I try to not get my hopes up. Besides, I’ve got my baking and … I’ve got you right? There’s no point in asking for more."
+                                                krampus "I try to not get my hopes up. Besides, I’ve got my baking and… I’ve got you right? There’s no point in asking for more."
                                                 "Krampus’ words make your chest tighten. You’re happy he thinks highly of you but you don’t want him to give up on making friends with the elves either."
-                                                "As your supplies dwindle, Krampus takes a pile of decorations and leaves the Kitchen. You decide that should too."
+                                                "As your supplies dwindle, Krampus takes a pile of decorations and leaves the Kitchen. You decide that you should too."
                                                 $ krampus_aff += 1
                                                 hide Krampus Rough with dissolve
                                                 call add_interaction from _call_add_interaction_27
@@ -1099,7 +1099,7 @@ label start:
 
                                             "Nothing will ever change with that attitude.":
                                                 krampus "I’ve had this {i}attitude{/i} for years. It’s not like I plan on changing anytime soon. I’m fine like I am and I’m fine on my own."
-                                                "He grabs up the decorations already made and storms out of Kitchen. As you leave, you wonder if Krampus will ever get along with the elves."
+                                                "He grabs up the decorations already made and storms out of the Kitchen. As you leave, you wonder if Krampus will ever get along with the elves."
 
                                                 $ krampus_aff -= 1
                                                 hide Krampus Rough with dissolve
@@ -1121,11 +1121,11 @@ label start:
                         hide Krampus Rough with dissolve
                         jump game_map
             elif day == 4:
-                "You head toward the Kitchen and see a stream of elves going in and out the door. Krampus is at his usual corner standing over some sort of structure with an intense focus. You go over to see what he’s doing and he lifts his head up when you get close."
+                "You head toward the Kitchen and see a stream of elves going in and out the door. Krampus is at his usual corner standing over some sort of structure with intense focus. You go over to see what he’s doing and he lifts his head up when you get close."
                 show Krampus Rough with dissolve
 
                 krampus "Can you lend me a hand with this? I need this gingerbread house ready for the Christmas celebration."
-                "He indicates to the piece in front of him. You can see that the base is mostly done and, from the relative layout, you determine that the final product will be reminiscent of Santa’s Workshop. Knowing Krampus it will be exact, done to the most miniscule detail."
+                "He indicates to the piece in front of him. You can see that the base is mostly done and, from the relative layout, you determine that the final product will be reminiscent of Santa’s Workshop. Knowing Krampus it will be exact, down to the most miniscule detail."
 
                 menu:
                     "I can help, but why aren’t the elves?":
@@ -1137,21 +1137,21 @@ label start:
                         krampus "Why would I? Do you think I’m imcompentent? I would do this all by myself if I wasn’t under a time crunch. Besides, I don’t need people who don’t even want to be around me. You’re the only one here who I want helping me."
                         "Krampus gives you a bag of frosting and starts indicating where to use it. You’re tired of his attitude and decide to put your foot down."
                         $ krampus_aff -= 1
-                me "I’m not doing anything until you tell me your problem with the elves."
+                me "I’m not doing anything until you tell me about your problem with the elves."
                 "“Wha...What?” Krampus sputters, “I don’t know what you’re talking about.”"
 
                 "The look you give him is hard and he quickly loses any will to fight back."
                 krampus "My problem is that they don’t like me. It wasn’t just the humans that believed the stories. They all think that I’m the evil being the stories said I was. I tried to show them that I wasn’t by coming to work in the Kitchen."
-                krampus "I made them cookies and any other sweets they could possibly desire, but nothing ever seems to work. Talking to them would just make them more afraid."
+                krampus "I made them cookies and any other sweets they could possibly desire, but nothing ever seemed to work. Talking to them would just make them more afraid."
                 krampus "I don’t intend to sound mean, but I’ve always had an abrasive personality. The more frustrated I got, the angrier I’d sound. I thought if I acted tough, it would hurt less when they avoided me. I see now I was just making my situation worse."
                 krampus "You’re one of the few people who saw past my defenses and I’m grateful for that. Can you do me one more favor and help them see that I’m not a bad guy?"
-                "Krampus’ eyes are pleading with you to help him. He didn’t look like some big, ole demon. Just a man who wants to be understood."
+                "Krampus’ eyes are pleading with you to help him. He didn’t look like some big, ole demon. Just a man who wanted to be understood."
 
                 menu:
                     "Of course.":
-                        "You take Krampus’ hand and drag him over to some elves. The elves are scared at first but seeing you there he relaxes."
+                        "You take Krampus’ hand and drag him over to some elves. The elves are scared at first but seeing you there they relax."
                     "Always":
-                        "You take Krampus’ hand and drag him over to some elves. The elves are scared at first but seeing you there he relaxes."
+                        "You take Krampus’ hand and drag him over to some elves. The elves are scared at first but seeing you there they relax."
                 me "Will you help us make the gingerbread house?"
 
                 "They seem like they’re about to refuse when you hear Krampus say, “Please.”"
@@ -1184,29 +1184,29 @@ label start:
             jump game_map
         else:
             if day == 2:
-                "You trudge through the snow to the stables. The thought of petting the reindeers puts a pep in your step."
+                "You trudge through the snow to the stables. The thought of petting the reindeer puts a pep in your step."
                 "You walk in and see the reindeers lined up in their stalls, each with their head out like they are expecting something. It surprises you that the space doesn’t actually smell like a barn. Clarice is at the far end by a big haystack."
                 menu:
                     "(Walk over to Clarice)":
                         show Clarice Rough with dissolve
                         menu:
-                            clarice "Oh, yer back. Glad to see ya returned. I knew ya could'nt resist these cuties. What can I do fer ye?"
+                            clarice "Oh, yer back. Glad to see ya returned. I knew ya could'nt resist these cuties. What can I do fer ya?"
 
-                            "I want to help you take care of the reindeers.":
-                                clarice "That so? Well, I'm glad to 'ave the help. Was just about to feed these guys if ya wouldn't mind lending a hand. I'll show ya what you gotta do."
-                                "He goes over to the wall and grabs two pitchforks, one of which he hands to you. Clarice stabs the pitchfork into the pile of hay and pulls away a big clump. With a simple swing of his arms, the small stack lands in the corner of one of the reindeers' stall."
-                                "\"Blitzen\", as the nameplate fixed to the door states, walks over to enjoy the fresh pile. Following Clarice's lead, you do the same thing for the other reindeers. The sounds of ruffling hay and chewing reindeers prompts you to ask a question."
+                            "I want to help you take care of the reindeer.":
+                                clarice "That so? Well, I'm glad to 'ave the help. Was just about to feed these guys if ya wouldn't mind lending a hand. I'll show ya what ya gotta do."
+                                "He goes over to the wall and grabs two pitchforks, one of which he hands to you. Clarice stabs the pitchfork into the pile of hay and pulls away a big clump. With a simple swing of his arms, the small stack lands in the corner of one of the reindeer's stalls."
+                                "\"Blitzen\", as the nameplate fixed to the door states, walks over to enjoy the fresh pile. Following Clarice's lead, you do the same thing for the other reindeer. The sounds of ruffling hay and chewing reindeer prompts you to ask a question."
                                 $ clarice_aff += 1
 
                                 menu:
                                     "Why are you a stablehand?":
                                         clarice "What else is there to do? Sit in a cave and make snow cones hoping somebody comes by? No way."
-                                        clarice "I need some company and there ain't no better company than these reindeer right here. They listen to all my stories and I can put my muscles to good use. Should I be somptin else?"
+                                        clarice "I need some company and there ain't no better company than these reindeer right here. They listen to all my stories and I can put me muscles to good use. Should I be somptin else?"
 
                                         menu:
                                             "No, It makes sense that a big, furry beast would be around other animals.":
-                                                clarice "Oh come now, I may be a yeti, but I ain't no beast. I have feelings too ya know just like these reindeers do. I thought you were more accepting than that. Guess I wasn't that good of a judge. Ya can go now. I can finish up the rest."
-                                                "You leave Clarice to feed the rest of the reindeers. You regret what you said to him as you walk out into the cold."
+                                                clarice "Oh come now, I may be a yeti, but I ain't no beast. I have feelings too ya know just like these reindeer do. I thought you were more accepting than that. Guess I wasn't that good of a judge. Ya can go now. I can finish up the rest."
+                                                "You leave Clarice to feed the rest of the reindeer. You regret what you said to him as you walk out into the cold."
 
                                                 $ clarice_aff -= 1
                                                 $ areas_visited.append("Stables")
@@ -1215,7 +1215,7 @@ label start:
                                                 call add_interaction from _call_add_interaction_33
                                                 jump game_map
                                             "No, I think it suits you. You and the reindeer seem happy here.":
-                                                clarice "Why thank ye! This job keeps me and my muscles busy, but I do try my best to keep 'em all cozy and full."
+                                                clarice "Why thank ye! This job keeps me and me muscles busy, but I do try my best to keep 'em all cozy and full."
                                                 clarice "It's nice talking with others who can speak back ya know? Anyway, I'm glad ya came here to help me and the rest of the workshop. Please stop by anytime and I can show you how wonderful these 'ere reindeer are."
 
                                                 "Once all the reindeer have a nice pile of hay, you tell Clarice goodbye and head out into the cold with a smile on your face."
@@ -1234,7 +1234,7 @@ label start:
                                         jump game_map
 
                             "(Pet the closest reindeer and leave)":
-                                "You find some enjoyment from petting the reindeer, and decide to go somewhere else."
+                                "You find some enjoyment from petting the reindeer and decide to go somewhere else."
 
                                 jump game_map
 
@@ -1242,9 +1242,9 @@ label start:
 
                 jump game_map
             elif day == 3:
-                "You head into the stables hopeful to play with the reindeers. As you look for Clarice, you hear him calling to you from inside one of the stalls with a brush in his hand."
+                "You head into the stables hopeful to play with the reindeer. As you look for Clarice, you hear him calling to you from inside one of the stalls with a brush in his hand."
                 show Clarice Rough with dissolve
-                clarice "I see yer back again for the reindeer. They’ve missed ya dearly since you’d last been back. I’m in the middle of grooming and inspecting ‘em for tomorrow’s flight."
+                clarice "I see yer back again for the reindeer. They’ve missed ya dearly since ya last been back. I’m in the middle of grooming and inspecting ‘em for tomorrow’s flight."
 
                 menu:
                     "I would love nothing more.":
@@ -1268,8 +1268,8 @@ label start:
 
                                         menu:
                                             "I think the reindeer are only fun because you’re here.":
-                                                clarice "Ha Ha. I guess ya could say that. I do keep them in good and in a good mood. Though Krampus gets angry when I spoil them with some of his treats. I can take pride as the Workshop’s stablehand. I’m darn good at it."
-                                                "That seemed to cheer him up, but you don’t think he truly grasped what you were trying to say. After Vixen was nice and clean, you decided it was time to head out."
+                                                clarice "Ha Ha. I guess ya could say that. I do keep them in a good mood. Though Krampus gets angry when I spoil them with some of his treats. I take pride as the Workshop’s stablehand. I’m darn good at it."
+                                                "That seemed to cheer him up, but you don’t think he truly grasped what you were trying to say. After Vixen was nice and clean, you decide it was time to head out."
 
                                                 $ clarice_aff += 1
                                                 call add_interaction from _call_add_interaction_36
@@ -1307,13 +1307,13 @@ label start:
                                 jump game_map
 
                     "I don't have time today.":
-                        "You head somewhere else to do find something to work on."
+                        "You head somewhere else to find something to work on."
                         hide Clarice Rough with dissolve
                         jump game_map
             elif day == 4:
 
 
-                "You notice commotion going on in the Stables and head over to check it out. Some elves are here as well and just assume they have come to get the reindeer for Claus’ sleigh."
+                "You notice commotion going on in the Stables and head over to check it out. Some elves are here as well and you assume they have come to get the reindeer for Claus’ sleigh."
                 "You head inside and see Clarice messing with Comet’s harness. You walk up to him and he smiles when he sees you."
                 show Clarice Rough with dissolve
                 clarice "I’m glad ya came today. Ya don’t wanna miss the reindeer getting all dressed up for their big night. Ya wanna give me a ‘and with them?"
@@ -1321,7 +1321,7 @@ label start:
                 menu:
                     "I can’t pass up the chance to hang out with the reindeer.":
                         clarice "Nope, ‘specially when Christmas Eve comes once a year. They look so pretty decked out in their bells. It is a little sad though, once they’re gone I’ll be all alone tonight."
-                        clarice "Y’ll probably go to the celebration once everything is done here. I guess I can play my bagpipes without worry of waking anyone up. Nobody wants a monster crashing their party anyway."
+                        clarice "Y’ll probably go to the celebration once everything is done here. I guess I can play me bagpipes without worry of waking anyone. Nobody wants a monster crashing their party anyway."
 
                         "Clarice seems really disheartened. What he says about being a monster rings in your ears. You know he’s not a monster and other people should know that too."
 
@@ -1376,13 +1376,13 @@ label start:
             jump game_map
         else:
             if day == 2:
-                "You decide to make a stop at the Frozen Lake to see if Jack was around. You see him over by a pile of snow to the east of the lake."
+                "You decide to make a stop at the Frozen Lake to see if Jack was around. You see him over by a pile of snow east of the lake."
                 menu:
                     "What do you want to do?"
 
                     "(Go see what Jack is up to)":
                         show Jack Rough with dissolve
-                        jack "Ooo look what the snowcat dragged out. I guess you do wanna have some fun after all. I was thinking of making some snowmen today. Wanna join?"
+                        jack "Oooh look what the snowcat dragged out. I guess you do wanna have some fun after all. I was thinking of making some snowmen today. Wanna join?"
 
                         menu:
                             "Sure, sounds nice.":
@@ -1464,9 +1464,9 @@ label start:
 
                         menu:
                             "I’m a little scared. I’ve never been skating before.":
-                                jack "Then you haven’t lived yet. Here, take my hand. I can show you how it’s don’t worry. I’m not gonna let you fall."
+                                jack "Then you haven’t lived yet. Here, take my hand. I can show you how it’s done, don’t worry. I’m not gonna let you fall."
                                 "Jack has a stupid grin on his face as you grab his hand."
-                                jack "Just one step at a time. Slide one leg forward then another. There you’re doing it!"
+                                jack "Just one step at a time. Slide one leg forward then another. There, you’re doing it!"
                                 "You slowly start skating forward and are able to maintain a steady pace without falling after a while. Now that you’re no longer terrified of falling, you decide to ask Jack a question."
 
                                 $ jack_aff += 1
@@ -1475,7 +1475,7 @@ label start:
                                     "Do you treat everyone who comes out here this nicely?":
                                         jack "I think so, but no one ever comes out here. Not to play at least. It’s usually just me what with the elves being busy for Christmas."
                                         jack "You’re the first person to join me in a long time. I wish everyday was like this."
-                                        "Jack’s demeanor fell for a moment before he shook it off with a half-hearted laugh. You could feel his grip on your hand tighten, but you chose not to say anything."
+                                        "Jack’s demeanor fell for a moment before he shook it off with a half-hearted laugh. You could feel his grip on your hand tighten, but you choose not to say anything."
                                         "After a while, you get tired and call it a day. You have a newfound love of ice skating now."
 
                                         $ jack_aff -= 1
@@ -1533,7 +1533,7 @@ label start:
             elif day == 4:
                 "Trudging through the fresh snow, you make your way towards the Frozen Lake. As you emerge from the frost coated pine trees, you find the lake is silent. No snowmen being built. No sounds of skates on ice. Nothing."
                 "Looking around, you don’t see the cheery spirit who roams the snow as you normally do. A breeze suddenly picks up and you shiver as the cold nibs at your exposed nose. Huddling down into your scarf, you hear a branch crack above you."
-                "Looking towards the sound you notice a figure sitting in the tree. As you get closer, you notice it’s Jack. He doesn’t appear to have noticed the crunching of your footsteps."
+                "Looking towards the sound you notice a figure sitting in a tree. As you get closer, you notice it’s Jack. He doesn’t appear to have noticed the crunching of your footsteps."
                 "In fact it doesn’t look like he’s noticing anything. He’s staring silently off into the distance. The sparkles that normally float around him are gone. He seems… cold."
                 me "Jack? What are you doing?"
                 "Jack blinks at his name and looks down. He smiles when he sees you, but his eyes don’t seem any warmer."
@@ -1559,39 +1559,39 @@ label start:
                 jack "That’s what everyone says. ‘Jack’s here to bring Christmas Cheer. Oh! Let’s go play with Jack. He always has the best games. Oh it’s cold out. Must be Jack Frost nipping at my nose!’"
                 jack "But after all the fun, all the games, everyone goes home where they talk and laugh and remember how much fun it all was. Without remembering that Jack was there too."
                 jack "For a long time, I thought nothing was better than watching people have fun with the snow I made. It didn’t matter that I couldn’t join them because I felt like I was a part of it in some way, that I was a friend they just couldn’t see."
-                jack " Eventually, I realized I wanted to see what that was like, to hang out and share happy moments with others. So I came here. Everyone here could see me and for a while they would play with me."
+                jack "Eventually, I realized I wanted to see what that was like, to hang out and share happy moments with others. So I came here. Everyone here could see me and for a while they would play with me."
                 jack "When Christmas time came around though, everyone would always get busy and they would stop coming to see me. Once again, I felt like I was always looking in from the outside, wishing for something more."
                 jack "I’m supposed to represent the Christmas Spirit and the joy of bringing people together, but honestly, I’ve never felt more alone than during Christmas time..."
 
-                "From his perch in the tree, you see the joyful Jack you know break down into tears which freeze on his face. The wind around you begins to pick up while hail swipes at your frozen cheeks. Using a scarf as a protective layer, you look up the crying spirit."
+                "From his perch in the tree, you see the joyful Jack you know break down into tears which freeze on his face. The wind around you begins to pick up while hail swipes at your frozen cheeks. Using a scarf as a protective layer, you look up at the crying spirit."
 
                 menu:
-                    "You’re not alone Jack Not this Christmas.":
+                    "You’re not alone Jack. Not this Christmas.":
                         "Tightening your mittens, you grab the lower branches of the pine tree and begin your ascent. A barrage of snow and ice make repeated attempts to halt your journey, but you push forward determined to comfort Jack in his time of need."
                     "(Start Climbing the Tree)":
                         "Tightening your mittens, you grab the lower branches of the pine tree and begin your ascent. A barrage of snow and ice make repeated attempts to halt your journey, but you push forward determined to comfort Jack in his time of need."
                 "As you reach the branch Jack’s sitting on, you see that ice has begun forming around him in a sort of cocoon. You slowly crawl across the branch, blinking snow flurries and ice crystals out of your eyes."
                 "The closer you get to Jack, the more intense the winds get. Lost in his sorrow, he doesn’t appear to notice you’ve left the ground until your hand grasps onto his arm. With a gasp, Jack takes his face out of his hands and looks at you."
 
-                jack "What…. What are you doing?"
+                jack "What… What are you doing?"
                 me "Warming up a frozen heart."
                 "You give Jack a soft smile. He seems confused by the fact that you’re in the tree next to him, but slowly he returns the smile."
 
                 me "You’re not alone Jack. Not this time."
 
                 "As the winds begin to die down, you attempt to shift closer to Jack. As you move, you lose your grip on the branch due to the freshly formed ice. Your arms and legs slide out from underneath you and everything moves as if in slow motion."
-                "Suddenly you’re moving further away from Jack and the tree, while his face eyes slowly widen in panic. Instinctively, you twist in the air and outstretch your hands to grab onto something."
+                "Suddenly you’re moving further away from Jack and the tree, while his eyes slowly widen in panic. Instinctively, you twist in the air and outstretch your hands to grab onto something."
                 "Anything, but you’re too heavy from the thinner branches below and can only watch as the white ground gets closer and closer. You instinctively close your eyes and brace for impact."
                 "After a moment you’re met with a force but it’s much softer than you anticipated. And… warm? Slowly you open your eyes and see not white, but blue in front of you. Blinking, you look up to see Jack holding you in his arms and looking down at you."
 
                 jack "Are you okay?"
 
-                me "“I… I’m fine, but what-” You look around to see yourself flying above the lake as Jack sits on his staff and holds you in bridal style."
+                me "“I… I’m fine, but what…?” You look around to see yourself flying above the lake as Jack sits on his staff and holds you bridal style."
 
                 menu:
-                    "I- I didn’t know you could fly.":
-                        jack "Jack smiled endearly, “Well, I’ve got a lot of tricks up my sleeve.”"
-                    "You- you saved me.":
+                    "I… I didn’t know you could fly.":
+                        jack "Jack smiled endearingly, “Well, I’ve got a lot of tricks up my sleeve.”"
+                    "You… you saved me.":
                         jack "Jack laughs, “No. You saved {i}{b}me{/b}{/i}."
 
                 "Jack sets your legs onto the flying branch and wraps you in a hug."
@@ -1848,7 +1848,7 @@ label start:
             scene kitchen
 
             "Walking into the kitchen you smell the familiar smell of gingerbread and peppermint."
-            "Instead of seeing Krampus by himself however, you see a few elves standing next to him on stools as Krampus is giving instructions. His voice is as stern as usual, but his eyes seem to hold a new light."
+            "Instead of seeing Krampus by himself, however, you see a few elves standing next to him on stools as Krampus is giving instructions. His voice is as stern as usual, but his eyes seem to hold a new light."
             show Krampus Rough with dissolve
             me "What are you doing?"
             "Krampus looks over at the sound of your voice."
@@ -1857,7 +1857,7 @@ label start:
             krampus "The elves say it’s from a game called ‘Bugsnax’. They say it’s Bernard’s favorite."
             me "You give a laugh. “I’m sure Bernard will love them. Anything I can help with today?”"
             krampus "Actually yes."
-            "Krampus puts down the tray of cookies and takes off his apron. This is the first time you’ve seen him without his apron on. He really does wear nothing but black fur and a pink apron."
+            "Krampus puts down the tray of cookies and takes off his apron. This is the first time you’ve seen him without his apron on. He really does wear nothing but a pink apron."
             krampus "The elves want me to join in their game and I was hoping you’d come with me. For support."
             "The large goat-man almost seems bashful as he asks, but you smile and take his hand."
 
@@ -1875,20 +1875,20 @@ label start:
         elif(max_aff == "clarice"):
             scene stables
 
-            "The next morning, you approach the stables as the light of dawn reflects off the new fallen snow. As you draw closer, you hear the sound off...bagpipes?"
-            "Pushing open the large stable door, you one large, bagpipe playing yeti standing in the center of a circle of sleeping reindeer. Hearing the door open, he drifts cuts off his song and waves to you."
+            "The next morning, you approach the stables as the light of dawn reflects off the new fallen snow. As you draw closer, you hear the sound of… bagpipes?"
+            "Pushing open the large stable door, you see one large, bagpipe playing yeti standing in the center of a circle of sleeping reindeer. Hearing the door open, he cuts off his song and waves to you."
 
             "Tiptoeing around the snoozing creatures, Clarice greets you at the door."
             show Clarice Rough with dissolve
 
-            clarice "Good mornin’! Did you sleep alright? That was one heck of a party last night. I ain’t been to something that rowdy since Dasher and Cupid’s thirteen! I always believed I was a monster, doomed to be alone with no one but the reindeer to talk to."
+            clarice "Good mornin’! Did ya sleep alright? That was one heck of a party last night. I ain’t been to something that rowdy since Dasher and Cupid’s thirteenth! I always believed I was a monster, doomed to be alone with no one but the reindeer to talk to."
             clarice "I love ‘em, but it’s not the same as having another person who can talk back. Just when I had given up hope, ‘ere yer were and I will treasure that moment for the rest of my life."
 
             "Clarice takes your hands in his and you gaze into each other’s eyes."
 
-            clarice "I always felt lost, like I was in a fog so thick I would never find my way home. But then ya shown a light on my life and I can finally see a future. One in which I’m not alone and you’re there by my side. Thank ya. Thank ya for being my Rudolph."
+            clarice "I always felt lost, like I was in a fog so thick I would never find my way home. But then ya shown a light on my life and I can finally see a future. One in which I’m not alone and you’re there by me side. Thank ya. Thank ya for being my Rudolph."
 
-            "Clarice wraps you in a large bear hug nestling you in his fur. You hug him back, knowing there’s nowhere else you’d rather be than with a yeti and his reindeer."
+            "Clarice wraps you in a large bear hug, nestling you in his fur. You hug him back, knowing there’s nowhere else you’d rather be than with a yeti and his reindeer."
 
             hide Clarice Rough with dissolve
 
@@ -1904,7 +1904,7 @@ label start:
             show Jack Rough with dissolve
             "In front of the tent is a small fire surrounded by a couple of logs. Jack seems to be practically bouncing."
 
-            jack "I thought we could do something warm for once. I may be Winter incarnate, but even I like to do something hot every once in a while. Come take a seat, I got hot cocoa and s’mores."
+            jack "I thought we could do something warm for once. I may be Winter incarnate, but even I like to do something hot every once in a while. Come take a seat, I've got hot cocoa and s’mores."
             "You both take a seat on one of the logs. He hands you a mug, which you wrap your hands around to absorb the heat."
             jack "I never thought I would get to spend Christmas with someone. And who was actually aware of me at that. I’ve made a thousand wishes and waited so many years, but it was worth it because I finally met you. For once, I feel like I’m on the inside, looking out."
             "You give him a funny look and he laughs."
