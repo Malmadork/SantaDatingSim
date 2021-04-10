@@ -2023,27 +2023,27 @@ label start:
         # Shows the interaction count the player now has
         if(day < 4):
             if(interaction == 1):
-                hide day_count_0
+                hide day_count_0 onlayer screens
                 show day_count_1 onlayer screens:
                     xalign 0.01
                     yalign 0.01
             elif(interaction == 2):
-                hide day_count_1
+                hide day_count_1 onlayer screens
                 show day_count_2 onlayer screens:
                     xalign 0.01
                     yalign 0.01
             elif(interaction == 0):
-                hide day_count_2
+                hide day_count_2 onlayer screens
                 show day_count_0 onlayer screens:
                     xalign 0.01
                     yalign 0.01
         elif(day == 4 and interaction == 0):
-            hide day_count_2
+            hide day_count_2 onlayer screens
             show day_count_0 onlayer screens:
                 xalign 0.01
                 yalign 0.01
         elif(day == 5 and interaction == 0):
-            hide day_count_2
+            hide day_count_2 onlayer screens
             show day_count_0 onlayer screens:
                 xalign 0.01
                 yalign 0.01
@@ -2065,11 +2065,11 @@ label start:
 
             # Shows the new day icon, as well as the wake-up text
         if(day == 2 and interaction == 0):
-            hide dec21st_img
+            hide dec21st_img onlayer screens
             show dec22nd_img onlayer screens:
                 xalign 0.01
                 yalign 0.16
-            hide day_count_2
+            hide day_count_2 onlayer screens
             show day_count_0 onlayer screens:
                 xalign 0.01
                 yalign 0.01
@@ -2077,11 +2077,11 @@ label start:
             scene courtyard
 
         elif(day == 3 and interaction == 0):
-            hide dec22nd_img
+            hide dec22nd_img onlayer screens
             show dec23rd_img onlayer screens:
                 xalign 0.01
                 yalign 0.16
-            hide day_count_2
+            hide day_count_2 onlayer screens
             show day_count_0 onlayer screens:
                 xalign 0.01
                 yalign 0.01
@@ -2093,11 +2093,11 @@ label start:
 
 
         elif(day == 4 and interaction == 0):
-            hide dec23rd_img
+            hide dec23rd_img onlayer screens
             show dec24th_img onlayer screens:
                 xalign 0.01
                 yalign 0.16
-            hide day_count_2
+            hide day_count_2 onlayer screens
             show day_count_0 onlayer screens:
                 xalign 0.01
                 yalign 0.01
@@ -2107,7 +2107,7 @@ label start:
             "You awake to another day at the North Pole and ready to get back to work. Along the way to Santa’s Workshop, you start wondering where you would like to go first."
 
         elif(day == 5 and interaction == 0):
-            hide dec24th_img
+            hide dec24th_img onlayer screens
             show dec25th_img onlayer screens:
                 xalign 0.01
                 yalign 0.16

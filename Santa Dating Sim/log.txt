@@ -1,21 +1,21 @@
-Fri Apr  9 20:21:41 2021
-Darwin-18.7.0-x86_64-i386-64bit
+Fri Apr  9 23:43:44 2021
+Darwin-20.3.0-x86_64-i386-64bit
 Ren'Py 7.4.4.1439
  
 
 Bootstrap to the start of init.init took 0.09s
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.41s
+Loading error handling took 0.12s
+Loading script took 1.95s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
+Running init code took 0.13s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to '/Users/meghan/Library/RenPy/backups/Santa Dating Sim':
+Backing up script files to '/Users/lukeschwartz/Library/RenPy/backups/Santa Dating Sim':
 Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -23,56 +23,11 @@ Initial gc. took 0.03s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
+Init translation took 0.04s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.09s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.08s
 Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.19s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1680, 1050)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon Pro 560X OpenGL Engine'
-Version: '2.1 ATI-2.11.20'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.43698692322s
-Screen sizes: virtual=(1280, 720) physical=(1370, 720) drawable=(2740, 1440)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 647, in run
-    he.result = command_fn(l)
-  File "renpy/common/00console.rpy", line 909, in jump
-    raise Exception("Ren'Py script not enabled. Not jumping.")
-Exception: Ren'Py script not enabled. Not jumping.
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 647, in run
-    he.result = command_fn(l)
-  File "renpy/common/00console.rpy", line 909, in jump
-    raise Exception("Ren'Py script not enabled. Not jumping.")
-Exception: Ren'Py script not enabled. Not jumping.
